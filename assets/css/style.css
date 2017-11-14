@@ -1,0 +1,73 @@
+a:hover {
+  text-decoration: none; }
+
+body {
+  background-image: url("/assets/images/background.png"); }
+  body #nav-container {
+    border-right: 0px solid #888888;
+    -webkit-box-shadow: 0 0px 26px -6px #222;
+    -moz-box-shadow: 0 0px 26px -6px #222;
+    box-shadow: 0 0px 26px -6px #222;
+    height: 100%;
+    width: 240px;
+    position: fixed;
+    background-color: white;
+    z-index: 100; }
+    body #nav-container ul {
+      padding: 0;
+      margin: 40px 20px 0px; }
+      body #nav-container ul #name-title {
+        list-style-type: none;
+        border-bottom: 1px solid #888888;
+        padding-bottom: 10px; }
+        body #nav-container ul #name-title #nav-my-name {
+          font-family: 'Josefin Slab', serif;
+          font-size: 47px;
+          font-weight: 700;
+          color: #5C4B51;
+          line-height: normal; }
+        body #nav-container ul #name-title #nav-my-job {
+          font-family: 'Josefin Slab', serif;
+          font-size: 19px;
+          font-weight: 400;
+          font-style: italic;
+          color: #F3B562;
+          margin-top: 10px; }
+      body #nav-container ul #nav-choices {
+        margin: 25px 0px;
+        position: fixed; }
+        body #nav-container ul #nav-choices .nav-choice {
+          list-style-type: none;
+          font-family: 'Josefin Slab', serif;
+          font-size: 25px;
+          font-weight: 200;
+          color: #5C4B51; }
+          body #nav-container ul #nav-choices .nav-choice #about-glyph {
+            color: #2E5458; }
+          body #nav-container ul #nav-choices .nav-choice #experience-glyph {
+            color: #F06060; }
+          body #nav-container ul #nav-choices .nav-choice #projects-glyph {
+            color: #8CBEB2; }
+          body #nav-container ul #nav-choices .nav-choice #skills-glyph {
+            color: #F2EBBF; }
+          body #nav-container ul #nav-choices .nav-choice #education-glyph {
+            color: #F3B562; }
+          body #nav-container ul #nav-choices .nav-choice #contact-glyph {
+            color: #73573F; }
+          body #nav-container ul #nav-choices .nav-choice #resume-glyph {
+            color: #5C4B51; }
+          body #nav-container ul #nav-choices .nav-choice .glyphicon {
+            margin-top: 1px; }
+          body #nav-container ul #nav-choices .nav-choice .nav-choice-titles {
+            margin-left: 8px;
+            color: #5C4B51; }
+          body #nav-container ul #nav-choices .nav-choice .nav-list-spans {
+            padding: 15px 0px; }
+  body #main-container {
+    display: flex; }
+    body #main-container #nav-spacer {
+      margin-left: 240px; }
+    body #main-container #main {
+      display: flex; }
+      body #main-container #main #about-div {
+        margin: 50px auto; }

@@ -1,0 +1,98 @@
+@import "variables.scss";
+
+a:hover {
+	text-decoration: none;
+}
+body {
+	background-image: url("/assets/images/background.png");
+
+	#nav-container {
+		border-right: 0px solid #888888;
+		-webkit-box-shadow: 0 0px 26px -6px #222;
+	  	-moz-box-shadow: 0 0px 26px -6px #222;
+	  	box-shadow: 0 0px 26px -6px #222;
+		height: 100%;
+		width: 240px;
+		position: fixed;
+		background-color: white;
+		z-index: 100;
+
+		ul {
+			padding: 0;
+			margin: 40px 20px 0px;
+
+			#name-title {
+				list-style-type: none;
+				border-bottom: 1px solid #888888;
+				padding-bottom: 10px;
+
+				#nav-my-name {
+					font-family: 'Josefin Slab', serif;
+		    		font-size: 47px;
+		    		font-weight: 700;
+		    		color: $black;
+		    		line-height: normal;
+				}
+
+				#nav-my-job {
+					font-family: 'Josefin Slab', serif;
+				    font-size: 19px;
+				    font-weight: 400;
+				    font-style: italic;
+				    color: $orange;
+				    margin-top: 10px;
+				}
+			}
+			
+			#nav-choices {
+				margin: 25px 0px;
+				position: fixed;
+
+				.nav-choice {
+					list-style-type: none;
+				    font-family: 'Josefin Slab', serif;
+				    font-size: 25px;
+				    font-weight: 200;
+				    color: $black;
+					
+					#about-glyph { color: $dark-teal; }
+					#experience-glyph { color: $salmon; }
+					#projects-glyph { color: $teal; }
+					#skills-glyph { color: $off-white; }
+					#education-glyph { color: $orange; }
+					#contact-glyph { color: $brown; }
+					#resume-glyph { color: $black; }
+
+					.glyphicon {
+						margin-top: 1px;
+					}
+
+				    .nav-choice-titles {
+				    	margin-left: 8px;
+				    	color: $black;
+				    }
+
+				    .nav-list-spans {
+				    	padding: 15px 0px;
+				    }
+				}
+			}
+		}
+	}
+
+	#main-container {
+		display: flex;
+
+		#nav-spacer {
+			margin-left: 240px;
+		}
+
+		#main {
+			display: flex;
+
+			#about-div {
+				margin: 50px auto;
+			}
+		}
+	}
+}
