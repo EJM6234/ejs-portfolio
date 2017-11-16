@@ -1,3 +1,9 @@
+.div-line-div {
+  display: flex; }
+  .div-line-div .div-line {
+    margin: 26px auto;
+    border-bottom: 2px solid #5C4B51; }
+
 a:hover {
   text-decoration: none; }
 
@@ -63,11 +69,91 @@ body {
             color: #5C4B51; }
           body #nav-container ul #nav-choices .nav-choice .nav-list-spans {
             padding: 15px 0px; }
+  body #open-close:hover {
+    cursor: pointer;
+    box-shadow: 0px 0px 7px #5C4B51; }
+  body #open-close {
+    position: fixed;
+    padding: 5px;
+    z-index: 200;
+    height: 55px;
+    width: 48px;
+    border-radius: 50%;
+    background-color: white;
+    border: 0px solid #5C4B51;
+    box-shadow: 0px 0px 5px; }
+    body #open-close #close-glyph {
+      margin: auto auto;
+      font-size: 40px; }
   body #main-container {
     display: flex; }
     body #main-container #nav-spacer {
       margin-left: 240px; }
-    body #main-container #main {
+    body #main-container #main .header {
+      background-color: #8CBEB2; }
+    body #main-container #main .header-text {
+      font-family: 'Josefin Slab', serif;
+      font-size: 59px;
+      font-weight: 700;
+      color: #5C4B51;
+      margin: 15px 0px 15px 60px; }
+    body #main-container #main #landing-div {
       display: flex; }
-      body #main-container #main #about-div {
-        margin: 50px auto; }
+      body #main-container #main #landing-div #profile-pic {
+        margin: 30px auto 10px;
+        width: 37%; }
+    body #main-container #main #social-media {
+      display: flex;
+      margin: 15px auto 0px; }
+      body #main-container #main #social-media #social-media-inner {
+        margin: 0 auto; }
+        body #main-container #main #social-media #social-media-inner .social-icons {
+          margin: 0 14px;
+          height: 90px; }
+        body #main-container #main #social-media #social-media-inner .social-icons:hover {
+          -webkit-box-shadow: 0 0px 26px -6px #222;
+          -moz-box-shadow: 0 0px 26px -6px #222;
+          box-shadow: 0 0px 26px -6px #222;
+          cursor: pointer; }
+    body #main-container #main #tagline-div #tagline {
+      font-family: 'Josefin Slab', serif;
+      font-size: 59px;
+      font-weight: 400;
+      font-style: italic;
+      color: #2E5458;
+      margin-top: 0px; }
+    body #main-container #main #about-div {
+      padding: 40px; }
+      body #main-container #main #about-div #about-text {
+        font-family: 'Josefin Slab', serif;
+        font-size: 20px;
+        font-weight: 400;
+        text-indent: 50px;
+        margin-bottom: 0px; }
+    body #main-container #main #experience-div #experience-header {
+      margin-bottom: 20px; }
+    body #main-container #main #projects-div #projects-panels .panel-row {
+      display: flex;
+      justify-content: space-around; }
+      body #main-container #main #projects-div #projects-panels .panel-row .projects-content-panel {
+        margin: 20px 0px 0px 0px;
+        padding: 0px;
+        width: 30%; }
+    body #main-container #main #skills-div #skills-header {
+      margin: 20px 0px; }
+    body #main-container #main #education-div #education-header {
+      margin-bottom: 20px; }
+    body #main-container #main #contact-div #contact-header {
+      margin-bottom: 20px; }
+    body #main-container #main #contact-div form .form-group label {
+      font-family: 'Josefin Slab', serif;
+      font-size: 20px;
+      font-weight: 400;
+      color: #2E5458;
+      margin-bottom: 0px; }
+    body #main-container #main #contact-div form .form-group input:focus, body #main-container #main #contact-div form .form-group textarea:focus {
+      border-color: #F3B562;
+      outline: 0;
+      box-shadow: 0px 0px 7px #F3B562; }
+    body #main-container #main #contact-div form .form-group textarea {
+      position: absolute; }

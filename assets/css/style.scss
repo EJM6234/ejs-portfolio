@@ -1,5 +1,14 @@
 @import "variables.scss";
 
+.div-line-div {
+	display: flex;
+
+	.div-line {
+		margin: 26px auto;
+		border-bottom: 2px solid $black;
+	}
+}
+
 a:hover {
 	text-decoration: none;
 }
@@ -79,6 +88,28 @@ body {
 			}
 		}
 	}
+	
+	#open-close:hover {
+		cursor: pointer;
+		box-shadow: 0px 0px 7px $black;
+	}
+
+	#open-close {
+		position: fixed;
+		padding: 5px;
+		z-index: 200;
+		height: 55px;
+		width: 48px;
+		border-radius: 50%;
+		background-color: white;
+		border: 0px solid #5C4B51;
+		box-shadow: 0px 0px 5px;
+
+		#close-glyph {
+			margin: auto auto;
+			font-size: 40px;
+		}
+	}
 
 	#main-container {
 		display: flex;
@@ -88,10 +119,170 @@ body {
 		}
 
 		#main {
-			display: flex;
+			.header {
+				background-color: $teal;
+			}
+
+			.header-text {
+				font-family: 'Josefin Slab', serif;
+			    font-size: 59px;
+			    font-weight: 700;
+			    color: $black;
+			    margin: 15px 0px 15px 60px;
+			}
+
+			#landing-div {
+				display: flex;
+
+				#profile-pic {
+					margin: 30px auto 10px;
+					width: 37%;
+				}
+			}
+
+			#social-media {
+				display: flex;
+				margin: 15px auto 0px;
+				
+				#social-media-inner {
+					margin: 0 auto;
+
+					.social-icons {
+						margin: 0 14px;
+						height: 90px;
+					}
+
+					.social-icons:hover {
+						-webkit-box-shadow: 0 0px 26px -6px #222;
+					  	-moz-box-shadow: 0 0px 26px -6px #222;
+					  	box-shadow: 0 0px 26px -6px #222;
+					  	cursor: pointer;
+					}
+				}
+			}
+
+			#tagline-div {
+
+				#tagline {
+					font-family: 'Josefin Slab', serif;
+				    font-size: 59px;
+				    font-weight: 400;
+				    font-style: italic;
+				    color: $dark-teal;
+				    margin-top: 0px;
+				}
+			}
 
 			#about-div {
-				margin: 50px auto;
+				padding: 40px;
+
+				#about-text {
+					font-family: 'Josefin Slab', serif;
+				    font-size: 20px;
+				    font-weight: 400;
+				    text-indent: 50px;
+				    margin-bottom: 0px;
+				}
+			}
+
+			#experience-div {
+
+				#experience-header {
+
+					margin-bottom: 20px;
+
+					#experience-header-text {
+
+					}
+				}
+
+				#experience-panels-div {
+
+					.experience-content-panel {
+
+					}
+				}
+			}
+			
+			#projects-div {
+
+				#projects-header {
+
+					#projects-header-text {
+
+					}
+				}
+				
+				#projects-panels {
+
+					.panel-row {
+						display: flex;
+						justify-content: space-around;
+
+						.projects-content-panel {
+							margin: 20px 0px 0px 0px;
+							padding: 0px;
+							width: 30%; 
+						}
+					}
+				}
+			}
+
+			#skills-div {
+				
+				#skills-header {
+					margin: 20px 0px;
+
+					#skills-header-text {
+
+					}
+				}
+			}
+
+			#education-div {
+				
+				#education-header {
+					margin-bottom: 20px;
+
+					#education-header-text {
+						
+					}
+				}
+			}
+
+			#contact-div {
+
+				#contact-header {
+					margin-bottom: 20px;
+
+					#contact-header-text {
+						
+					}
+				}
+
+				form {
+
+					.form-group {
+
+						label {
+							font-family: 'Josefin Slab', serif;
+				    		font-size: 20px;
+				    		font-weight: 400;
+				    		color: $dark-teal;
+				    		margin-bottom: 0px;
+						}
+
+						input:focus, textarea:focus {
+							border-color: $orange;
+							outline: 0;
+    						box-shadow: 0px 0px 7px $orange;
+						}
+
+						textarea {
+							position: absolute;
+						}
+					}
+				}
 			}
 		}
 	}
