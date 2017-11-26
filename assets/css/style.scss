@@ -9,9 +9,23 @@
 	}
 }
 
+.skill-div-line-div {
+	display: flex;
+
+	.skill-div-line {
+		margin: 3px auto 17px;
+		border-bottom: 1px solid $black;
+	}
+}
+
 a:hover {
 	text-decoration: none;
 }
+
+a:visited {
+	text-decoration: none;
+}
+
 body {
 	background-image: url("/assets/images/background.png");
 
@@ -96,6 +110,8 @@ body {
 
 	#open-close {
 		position: fixed;
+		left: 217px;
+		top: 331px;
 		padding: 5px;
 		z-index: 200;
 		height: 55px;
@@ -184,22 +200,25 @@ body {
 				    margin-bottom: 0px;
 				}
 			}
-
-			#experience-div {
-
-				#experience-header {
-
+			
+			#education-div {
+				
+				#education-header {
 					margin-bottom: 20px;
 
-					#experience-header-text {
-
+					#education-header-text {
+						
 					}
 				}
 
-				#experience-panels-div {
+				#education-panels-div {
 
-					.experience-content-panel {
+					.school-panels {
 
+						.school-icon {
+							width: 100px;
+							height: 100px;
+						}
 					}
 				}
 			}
@@ -237,15 +256,86 @@ body {
 
 					}
 				}
+
+				#skills-panels-div {
+					
+					.skill-subheader {
+						font-family: 'Josefin Slab', serif;
+			    		font-size: 40px;
+			    		font-weight: 500;
+			    		color: $black;
+			    		margin: 0;
+					}
+
+					.skill-panel {
+						display: flex;
+						justify-content: space-around;
+
+						i {
+							font-size: 80px;
+						}
+					}
+				}
 			}
 
-			#education-div {
-				
-				#education-header {
+			#experience-div {
+
+				#experience-header {
+
 					margin-bottom: 20px;
 
-					#education-header-text {
-						
+					#experience-header-text {
+
+					}
+				}
+
+				#experience-panels-div {
+
+					.experience-content-panel {
+
+						.job-location {
+							display: flex;
+							justify-content: space-between;
+							margin-top: 8px;
+
+							.exp-job {
+								font-family: 'Josefin Slab', serif;
+							    font-size: 20px;
+							    font-weight: 700;
+							    color: $black;
+							}
+
+							.exp-location {
+								font-family: 'Josefin Slab', serif;
+							    font-size: 18px;
+							    font-style: italic;
+							    font-weight: 400;
+							    color: $black;
+							    margin: auto 0px;
+							}
+						}
+
+						.exp-title {
+							font-family: 'Josefin Slab', serif;
+						    font-size: 18px;
+						    font-weight: 500;
+						    color: $black;
+						}
+
+						.exp-date {
+							font-family: 'Josefin Slab', serif;
+						    font-size: 16px;
+						    font-weight: 400;
+						    font-style: italic;
+						    color: $black;
+						}
+
+						.exp-description {
+							font-family: 'Josefin Slab', serif;
+						    font-size: 14px;
+						    font-weight: 400;
+						    color: $black;
+						}
 					}
 				}
 			}

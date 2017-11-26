@@ -4,7 +4,16 @@
     margin: 26px auto;
     border-bottom: 2px solid #5C4B51; }
 
+.skill-div-line-div {
+  display: flex; }
+  .skill-div-line-div .skill-div-line {
+    margin: 3px auto 17px;
+    border-bottom: 1px solid #5C4B51; }
+
 a:hover {
+  text-decoration: none; }
+
+a:visited {
   text-decoration: none; }
 
 body {
@@ -74,6 +83,8 @@ body {
     box-shadow: 0px 0px 7px #5C4B51; }
   body #open-close {
     position: fixed;
+    left: 217px;
+    top: 331px;
     padding: 5px;
     z-index: 200;
     height: 55px;
@@ -130,8 +141,11 @@ body {
         font-weight: 400;
         text-indent: 50px;
         margin-bottom: 0px; }
-    body #main-container #main #experience-div #experience-header {
+    body #main-container #main #education-div #education-header {
       margin-bottom: 20px; }
+    body #main-container #main #education-div #education-panels-div .school-panels .school-icon {
+      width: 100px;
+      height: 100px; }
     body #main-container #main #projects-div #projects-panels .panel-row {
       display: flex;
       justify-content: space-around; }
@@ -141,8 +155,51 @@ body {
         width: 30%; }
     body #main-container #main #skills-div #skills-header {
       margin: 20px 0px; }
-    body #main-container #main #education-div #education-header {
+    body #main-container #main #skills-div #skills-panels-div .skill-subheader {
+      font-family: 'Josefin Slab', serif;
+      font-size: 40px;
+      font-weight: 500;
+      color: #5C4B51;
+      margin: 0; }
+    body #main-container #main #skills-div #skills-panels-div .skill-panel {
+      display: flex;
+      justify-content: space-around; }
+      body #main-container #main #skills-div #skills-panels-div .skill-panel i {
+        font-size: 80px; }
+    body #main-container #main #experience-div #experience-header {
       margin-bottom: 20px; }
+    body #main-container #main #experience-div #experience-panels-div .experience-content-panel .job-location {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 8px; }
+      body #main-container #main #experience-div #experience-panels-div .experience-content-panel .job-location .exp-job {
+        font-family: 'Josefin Slab', serif;
+        font-size: 20px;
+        font-weight: 700;
+        color: #5C4B51; }
+      body #main-container #main #experience-div #experience-panels-div .experience-content-panel .job-location .exp-location {
+        font-family: 'Josefin Slab', serif;
+        font-size: 18px;
+        font-style: italic;
+        font-weight: 400;
+        color: #5C4B51;
+        margin: auto 0px; }
+    body #main-container #main #experience-div #experience-panels-div .experience-content-panel .exp-title {
+      font-family: 'Josefin Slab', serif;
+      font-size: 18px;
+      font-weight: 500;
+      color: #5C4B51; }
+    body #main-container #main #experience-div #experience-panels-div .experience-content-panel .exp-date {
+      font-family: 'Josefin Slab', serif;
+      font-size: 16px;
+      font-weight: 400;
+      font-style: italic;
+      color: #5C4B51; }
+    body #main-container #main #experience-div #experience-panels-div .experience-content-panel .exp-description {
+      font-family: 'Josefin Slab', serif;
+      font-size: 14px;
+      font-weight: 400;
+      color: #5C4B51; }
     body #main-container #main #contact-div #contact-header {
       margin-bottom: 20px; }
     body #main-container #main #contact-div form .form-group label {
