@@ -2,13 +2,14 @@
   "name": "ejs-portfolio",
   "version": "1.0.0",
   "description": "Portfolio for EJ Morgan/Software Developer",
-  "main": "gulpfile.js",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "EJ Morgan",
   "license": "ISC",
   "dependencies": {
+    "express": "^4.16.2",
     "gulp": "^3.9.1",
     "sass": "^1.0.0-beta.2"
   },
