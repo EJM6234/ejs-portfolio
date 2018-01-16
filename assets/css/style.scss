@@ -1,375 +1,459 @@
 @import "variables.scss";
+@import "extend.scss";
 
-.div-line-div {
-	display: flex;
+body,
+html {
+	height: 100%;
 
-	.div-line {
-		margin: 26px auto;
-		border-bottom: 2px solid $black;
-	}
-}
-
-.skill-div-line-div {
-	display: flex;
-
-	.skill-div-line {
-		margin: 3px auto 17px;
-		border-bottom: 1px solid $black;
-	}
-}
-
-a:hover {
-	text-decoration: none;
-}
-
-a:visited {
-	text-decoration: none;
-}
-
-body {
-	background-image: url("/assets/images/background.png");
-
-	#nav-container {
-		border-right: 0px solid #888888;
-		-webkit-box-shadow: 0 0px 26px -6px #222;
-	  	-moz-box-shadow: 0 0px 26px -6px #222;
-	  	box-shadow: 0 0px 26px -6px #222;
-		height: 100%;
-		width: 240px;
-		position: fixed;
-		background-color: white;
-		z-index: 100;
-
-		ul {
-			padding: 0;
-			margin: 40px 20px 0px;
-
-			#name-title {
-				list-style-type: none;
-				border-bottom: 1px solid #888888;
-				padding-bottom: 10px;
-
-				#nav-my-name {
-					font-family: 'Josefin Slab', serif;
-		    		font-size: 47px;
-		    		font-weight: 700;
-		    		color: $black;
-		    		line-height: normal;
-				}
-
-				#nav-my-job {
-					font-family: 'Josefin Slab', serif;
-				    font-size: 19px;
-				    font-weight: 400;
-				    font-style: italic;
-				    color: $orange;
-				    margin-top: 10px;
-				}
-			}
-			
-			#nav-choices {
-				margin: 25px 0px;
-				position: fixed;
-
-				.nav-choice {
-					list-style-type: none;
-				    font-family: 'Josefin Slab', serif;
-				    font-size: 25px;
-				    font-weight: 200;
-				    color: $black;
-					
-					#about-glyph { color: $dark-teal; }
-					#experience-glyph { color: $salmon; }
-					#projects-glyph { color: $teal; }
-					#skills-glyph { color: $off-white; }
-					#education-glyph { color: $orange; }
-					#contact-glyph { color: $brown; }
-					#resume-glyph { color: $black; }
-
-					.glyphicon {
-						margin-top: 1px;
-					}
-
-				    .nav-choice-titles {
-				    	margin-left: 8px;
-				    	color: $black;
-				    }
-
-				    .nav-list-spans {
-				    	padding: 15px 0px;
-				    }
-				}
-			}
-		}
-	}
-	
-	#open-close:hover {
-		cursor: pointer;
-		box-shadow: 0px 0px 7px $black;
-	}
-
-	#open-close {
-		position: fixed;
-		left: 217px;
-		top: 331px;
-		padding: 5px;
-		z-index: 200;
-		height: 55px;
-		width: 48px;
-		border-radius: 50%;
-		background-color: white;
-		border: 0px solid #5C4B51;
-		box-shadow: 0px 0px 5px;
-
-		#close-glyph {
-			margin: auto auto;
-			font-size: 40px;
-		}
-	}
-
-	#main-container {
+	.div-line-div {
 		display: flex;
 
-		#nav-spacer {
-			margin-left: 240px;
+		.div-line {
+			margin: 26px auto;
+			border-bottom: 2px solid $black;
+		}
+	}
+
+	.skill-div-line-div {
+		display: flex;
+
+		.skill-div-line {
+			margin: 3px auto 17px;
+			border-bottom: 1px solid $black;
+		}
+	}
+
+	a:hover {
+		text-decoration: none;
+		cursor: pointer;
+	}
+
+	a:visited {
+		text-decoration: none;
+	}
+
+	body {
+		background-image: url("/assets/images/background.png");
+
+		#nav-container {
+			border-right: 0 solid #888888;
+			box-shadow: 0 0 26px -6px #222;
+			height: 100%;
+			width: 240px;
+			position: fixed;
+			background-color: white;
+			z-index: 100;
+
+			ul {
+				padding: 0;
+				margin: 40px 20px 0;
+
+				#name-title {
+					list-style-type: none;
+					border-bottom: 1px solid #888888;
+					padding-bottom: 10px;
+
+					#nav-my-name {
+						font-family: 'Josefin Slab', serif;
+						font-size: 47px;
+						font-weight: 700;
+						color: $black;
+						line-height: normal;
+					}
+
+					#nav-my-job {
+						font-family: 'Josefin Slab', serif;
+						font-size: 19px;
+						font-weight: 400;
+						font-style: italic;
+						color: $orange;
+						margin-top: 10px;
+					}
+				}
+
+				#nav-choices li#about::before {
+					@extend %nav-list-item;
+					background: linear-gradient(to right, $dark-teal , #FFFFFF);
+				}
+
+				#nav-choices li#connect::before {
+					@extend %nav-list-item;
+					background: linear-gradient(to right, $brown , #FFFFFF);
+				}
+
+				#nav-choices li#education::before {
+					@extend %nav-list-item;
+					background: linear-gradient(to right, $orange , #FFFFFF);
+				}
+
+				#nav-choices li#experience::before {
+					@extend %nav-list-item;
+					background: linear-gradient(to right, $salmon , #FFFFFF);
+				}
+
+				#nav-choices li#projects::before {
+					@extend %nav-list-item;
+					background: linear-gradient(to right, $teal , #FFFFFF);
+				}
+
+				#nav-choices li#resume::before {
+					@extend %nav-list-item;
+					background: linear-gradient(to right, $black , #FFFFFF);
+				}
+
+				#nav-choices li#skills::before {
+					@extend %nav-list-item;
+					background: linear-gradient(to right, $off-white , #FFFFFF);
+				}
+
+				#nav-choices li#about:hover::before,
+				#nav-choices li#connect:hover::before,
+				#nav-choices li#education:hover::before,
+				#nav-choices li#experience:hover::before,
+				#nav-choices li#projects:hover::before,
+				#nav-choices li#resume:hover::before,
+				#nav-choices li#skills:hover::before {
+					width: 26%;
+					opacity: 0.7;
+					cursor: pointer;
+				}
+
+				#nav-choices {
+					margin: 25px 0;
+					position: fixed;
+					bottom: 50px;
+
+					.nav-choice:hover {
+						color: #FFFFFF;
+					}
+
+					.nav-choice {
+						list-style-type: none;
+						font-family: 'Josefin Slab', serif;
+						font-size: 25px;
+						font-weight: 200;
+						color: $black;
+						height: 60px;
+
+						.nav-choice-divs {
+							color: $black;
+							margin: 10px;
+
+							#about-glyph {
+								color: $dark-teal;
+							}
+
+							#education-glyph {
+								color: $orange;
+							}
+
+							#projects-glyph {
+								color: $teal;
+							}
+
+							#skills-glyph {
+								color: $off-white;
+							}
+
+							#experience-glyph {
+								color: $salmon;
+							}
+
+							#connect-glyph {
+								color: $brown;
+							}
+
+							#resume-glyph {
+								color: $black;
+							}
+
+							.glyphicon {
+								margin-top: 1px;
+							}
+
+							.nav-titles {
+								margin: 11px;
+							}
+						}
+					}
+				}
+			}
 		}
 
-		#main {
-			.header {
-				background-color: $teal;
+		#open-close:hover {
+			cursor: pointer;
+			box-shadow: 0 0 7px $black;
+		}
+
+		#open-close {
+			position: fixed;
+			left: 217px;
+			top: 331px;
+			padding: 5px;
+			z-index: 200;
+			height: 55px;
+			width: 48px;
+			border-radius: 50%;
+			background-color: white;
+			border: 0 solid #5C4B51;
+			box-shadow: 0 0 5px;
+
+			#close-glyph {
+				margin: auto;
+				font-size: 40px;
+			}
+		}
+
+		#main-container {
+			display: flex;
+
+			#nav-spacer {
+				margin-left: 240px;
 			}
 
-			.header-text {
-				font-family: 'Josefin Slab', serif;
-			    font-size: 59px;
-			    font-weight: 700;
-			    color: $black;
-			    margin: 15px 0px 15px 60px;
-			}
-
-			#landing-div {
-				display: flex;
-
-				#profile-pic {
-					margin: 30px auto 10px;
-					width: 37%;
+			#main {
+				.header {
+					background-color: $teal;
 				}
-			}
 
-			#social-media {
-				display: flex;
-				margin: 15px auto 0px;
-				
-				#social-media-inner {
-					margin: 0 auto;
-
-					.social-icons {
-						margin: 0 14px;
-						height: 90px;
-					}
-
-					.social-icons:hover {
-						-webkit-box-shadow: 0 0px 26px -6px #222;
-					  	-moz-box-shadow: 0 0px 26px -6px #222;
-					  	box-shadow: 0 0px 26px -6px #222;
-					  	cursor: pointer;
-					}
-				}
-			}
-
-			#tagline-div {
-
-				#tagline {
+				.header-text {
 					font-family: 'Josefin Slab', serif;
-				    font-size: 59px;
-				    font-weight: 400;
-				    font-style: italic;
-				    color: $dark-teal;
-				    margin-top: 0px;
+					font-size: 59px;
+					font-weight: 700;
+					color: $black;
+					margin: 15px 0;
 				}
-			}
 
-			#about-div {
-				padding: 40px;
+				#landing-div {
+					display: flex;
 
-				#about-text {
-					font-family: 'Josefin Slab', serif;
-				    font-size: 20px;
-				    font-weight: 400;
-				    text-indent: 50px;
-				    margin-bottom: 0px;
-				}
-			}
-			
-			#education-div {
-				
-				#education-header {
-					margin-bottom: 20px;
-
-					#education-header-text {
-						
+					#profile-pic {
+						margin: 30px auto 10px;
+						-moz-width: 45%;
 					}
 				}
 
-				#education-panels-div {
-
-					.school-panels {
-
-						.school-icon {
-							width: 100px;
-							height: 100px;
-						}
-					}
-				}
-			}
-			
-			#projects-div {
-
-				#projects-header {
-
-					#projects-header-text {
-
-					}
-				}
-				
-				#projects-panels {
-
-					.panel-row {
-						display: flex;
-						justify-content: space-around;
-
-						.projects-content-panel {
-							margin: 20px 0px 0px 0px;
-							padding: 0px;
-							width: 30%; 
-						}
-					}
-				}
-			}
-
-			#skills-div {
-				
-				#skills-header {
-					margin: 20px 0px;
-
-					#skills-header-text {
-
-					}
-				}
-
-				#skills-panels-div {
-					
-					.skill-subheader {
+				#tagline-div {
+					#tagline {
 						font-family: 'Josefin Slab', serif;
-			    		font-size: 40px;
-			    		font-weight: 500;
-			    		color: $black;
-			    		margin: 0;
+						font-size: 59px;
+						font-weight: 400;
+						font-style: italic;
+						color: $dark-teal;
+						margin-top: 0;
 					}
+				}
 
-					.skill-panel {
-						display: flex;
-						justify-content: space-around;
+				#about-div {
+					padding: 40px;
 
-						i {
-							font-size: 80px;
+					.about-panel {
+						margin-bottom: 0;
+						text-align: justify;
+
+						#about-text {
+							font-family: 'Josefin Slab', serif;
+							font-size: 20px;
+							font-weight: 400;
+							text-indent: 50px;
+							margin-bottom: 0;
 						}
 					}
 				}
-			}
 
-			#experience-div {
+				#education-div {
+					#education-header {
+						margin-bottom: 20px;
 
-				#experience-header {
+						#education-header-text {}
+					}
 
-					margin-bottom: 20px;
+					#education-panels-div {
+						.school-panels {
+							.school-logo {
+								margin-top: 8px;
 
-					#experience-header-text {
+								.school-icon {
+									width: 60px;
+									height: 60px;
+									margin: auto;
+									display: block;
+								}
 
+								.uni-name {
+									font-family: 'Josefin Slab', serif;
+									font-size: 45px;
+									font-weight: 800;
+								}
+
+								#unc-name {
+									margin-top: 3px;
+								}
+							}
+
+							.deg-grad {
+								display: flex;
+								justify-content: space-between;
+								margin: auto 25px;
+
+								.degree {
+									font-family: 'Josefin Slab', serif;
+									font-size: 20px;
+									font-weight: 400;
+								}
+
+								.grad-date {
+									font-family: 'Josefin Slab', serif;
+									font-size: 20px;
+									font-weight: 400;
+									font-style: italic;
+								}
+							}
+
+							.ed-list {
+								font-family: 'Josefin Slab', serif;
+								font-size: 16px;
+								font-weight: 400;
+								margin-top: 10px;
+							}
+						}
 					}
 				}
 
-				#experience-panels-div {
+				#projects-div {
+					#projects-header {
+						#projects-header-text {}
+					}
 
-					.experience-content-panel {
-
-						.job-location {
+					#projects-panels {
+						.panel-row {
 							display: flex;
-							justify-content: space-between;
-							margin-top: 8px;
+							justify-content: space-around;
 
-							.exp-job {
-								font-family: 'Josefin Slab', serif;
-							    font-size: 20px;
-							    font-weight: 700;
-							    color: $black;
+							.projects-content-panel {
+								margin: 20px 0 0;
+								padding: 0;
+								width: 30%;
+
+								.projects-footer {
+									font-family: 'Josefin Slab', serif;
+									font-size: 24px;
+									font-weight: 700;
+									color: $teal;
+								}
 							}
-
-							.exp-location {
-								font-family: 'Josefin Slab', serif;
-							    font-size: 18px;
-							    font-style: italic;
-							    font-weight: 400;
-							    color: $black;
-							    margin: auto 0px;
-							}
-						}
-
-						.exp-title {
-							font-family: 'Josefin Slab', serif;
-						    font-size: 18px;
-						    font-weight: 500;
-						    color: $black;
-						}
-
-						.exp-date {
-							font-family: 'Josefin Slab', serif;
-						    font-size: 16px;
-						    font-weight: 400;
-						    font-style: italic;
-						    color: $black;
-						}
-
-						.exp-description {
-							font-family: 'Josefin Slab', serif;
-						    font-size: 14px;
-						    font-weight: 400;
-						    color: $black;
 						}
 					}
 				}
-			}
 
-			#contact-div {
+				#skills-div {
+					#skills-header {
+						margin: 20px 0;
 
-				#contact-header {
-					margin-bottom: 20px;
+						#skills-header-text {}
+					}
 
-					#contact-header-text {
-						
+					#skills-panels-div {
+						.skill-subheader {
+							font-family: 'Josefin Slab', serif;
+							font-size: 40px;
+							font-weight: 500;
+							color: $black;
+							margin: 0;
+						}
+
+						.skill-panel {
+							display: flex;
+							justify-content: space-around;
+
+							i {
+								font-size: 80px;
+							}
+						}
 					}
 				}
 
-				form {
+				#experience-div {
+					#experience-header {
+						margin-bottom: 20px;
 
-					.form-group {
+						#experience-header-text {}
+					}
 
-						label {
-							font-family: 'Josefin Slab', serif;
-				    		font-size: 20px;
-				    		font-weight: 400;
-				    		color: $dark-teal;
-				    		margin-bottom: 0px;
+					#experience-panels-div {
+						.experience-content-panel {
+							.job-location {
+								display: flex;
+								justify-content: space-between;
+								margin-top: 8px;
+
+								.exp-job {
+									font-family: 'Josefin Slab', serif;
+									font-size: 20px;
+									font-weight: 700;
+									color: $black;
+								}
+
+								.exp-location {
+									font-family: 'Josefin Slab', serif;
+									font-size: 18px;
+									font-style: italic;
+									font-weight: 400;
+									color: $black;
+									margin: auto 0;
+								}
+							}
+
+							.exp-title {
+								font-family: 'Josefin Slab', serif;
+								font-size: 18px;
+								font-weight: 500;
+								color: $black;
+							}
+
+							.exp-date {
+								font-family: 'Josefin Slab', serif;
+								font-size: 16px;
+								font-weight: 400;
+								font-style: italic;
+								color: $black;
+							}
+
+							.exp-description {
+								font-family: 'Josefin Slab', serif;
+								font-size: 14px;
+								font-weight: 400;
+								color: $black;
+							}
 						}
+					}
+				}
 
-						input:focus, textarea:focus {
-							border-color: $orange;
-							outline: 0;
-    						box-shadow: 0px 0px 7px $orange;
-						}
+				#connect-div {
+					#connect-header {
+						margin-bottom: 20px;
 
-						textarea {
-							position: absolute;
+						#connect-header-text {}
+					}
+
+					#social-media {
+						display: flex;
+						margin: 15px auto 35px;
+
+						#social-media-inner {
+							margin: 0 auto;
+
+							.social-icons {
+								margin: 0 14px;
+								height: 90px;
+							}
+
+							.social-icons:hover {
+								-webkit-box-shadow: 0 0 26px -6px #222;
+								-moz-box-shadow: 0 0 26px -6px #222;
+								box-shadow: 0 0 26px -6px #222;
+								cursor: pointer;
+							}
 						}
 					}
 				}

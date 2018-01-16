@@ -1,0 +1,10 @@
+@import "variables.scss";
+
+%nav-list-item {
+  position: absolute;
+  width: 2px;
+  height: 52px;
+  content: '';
+  transition: all 0.3s;
+  margin: -11px 0;
+}

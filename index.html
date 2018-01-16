@@ -1,28 +1,20 @@
 <!DOCTYPE html>
 <html>
+<!-- TODO: Media queries for different browser widths -->
+<!-- TODO: Update project tabs with most recent/relevant projects -->
+<!-- TODO: Project tabs need to flip and display info on project -->
+<!-- TODO: Links on navbar scroll to relevant section -->
+
 <head>
 	<title>EJ Morgan | Software Developer Portfolio</title>
 	<meta name="viewport" content="width=device-width initial-scale=1">
 	<meta charset="utf-8">
 	<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
-	<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
-	<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
-	<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
-	<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
-	<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
-	<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
-	<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
-	<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
-	<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
-	<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
-	<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
-	<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
-	<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
-	<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
 	<link href="https://fonts.googleapis.com/css?family=Josefin+Slab:100,100i,300,300i,400,400i,600,600i,700,700i" rel="stylesheet">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="./assets/css/style.css">
 </head>
+
 <body>
 	<div id="nav-container" class="col-lg-2">
 		<ul>
@@ -32,154 +24,188 @@
 					<div id="nav-my-job">Full-Stack Developer</div>
 				</a>
 			</li>
-			<div id="nav-choices">
-				<li class="nav-choice">
-					<a href="#about">
-						<span id="about-glyph" class="glyphicon glyphicon-user nav-list-spans"></span>
-						<span class="nav-choice-titles nav-list-spans">About</span>
+			<div id="nav-choices" class="pull-right">
+				<li id="about" class="nav-choice">
+					<a href="#about-header">
+						<span class="nav-choice-divs">
+							<span id="about-glyph" class="glyphicon glyphicon-user nav-list-spans"></span>
+							<span class="nav-titles">About</span>
+						</span>
 					</a>
 				</li>
-				<li class="nav-choice">
-					<a href="#education">
-						<span id="education-glyph" class="glyphicon glyphicon-apple nav-list-spans"></span>
-						<span class="nav-choice-titles nav-list-spans">Education</span>
+				<li id="education" class="nav-choice">
+					<a href="#education-header">
+						<span class="nav-choice-divs">
+							<span id="education-glyph" class="glyphicon glyphicon-apple nav-list-spans"></span>
+							<span class="nav-titles">Education</span>
+						</span>
+
 					</a>
 				</li>
-				<li class="nav-choice">
-					<a href="#projects">
-						<span id="projects-glyph" class="glyphicon glyphicon-briefcase nav-list-spans"></span>
-						<span class="nav-choice-titles nav-list-spans">Projects</span>
+				<li id="projects" class="nav-choice">
+					<a href="#projects-header">
+						<span class="nav-choice-divs">
+							<span id="projects-glyph" class="glyphicon glyphicon-briefcase nav-list-spans"></span>
+							<span class="nav-titles">Projects</span>
+						</span>
 					</a>
 				</li>
-				<li class="nav-choice">
-					<a href="#skills">
-						<span id="skills-glyph" class="glyphicon glyphicon-stats nav-list-spans"></span>
-						<span class="nav-choice-titles nav-list-spans">Skills</span>
+				<li id="skills" class="nav-choice">
+					<a href="#skills-header">
+						<span class="nav-choice-divs">
+							<span id="skills-glyph" class="glyphicon glyphicon-stats nav-list-spans"></span>
+							<span class="nav-titles">Skills</span>
+						</span>
 					</a>
 				</li>
-				<li class="nav-choice">
-					<a href="#experience">
-						<span id="experience-glyph" class="glyphicon glyphicon-road nav-list-spans"></span>
-						<span class="nav-choice-titles nav-list-spans">Experience</span>
+				<li id="experience" class="nav-choice">
+					<a href="#experience-header">
+						<span class="nav-choice-divs">
+							<span id="experience-glyph" class="glyphicon glyphicon-road nav-list-spans"></span>
+							<span class="nav-titles">Experience</span>
+						</span>
 					</a>
 				</li>
-				<li class="nav-choice">
-					<a href="#contact">
-						<span id="contact-glyph" class="glyphicon glyphicon-envelope nav-list-spans"></span>
-						<span class="nav-choice-titles nav-list-spans">Contact</span>
+				<li id="connect" class="nav-choice">
+					<a href="#connect-header">
+						<span class="nav-choice-divs">
+							<span id="connect-glyph" class="glyphicon glyphicon-envelope nav-list-spans"></span>
+							<span class="nav-titles">Connect</span>
+						</span>
 					</a>
 				</li>
-				<li class="nav-choice">
+				<li id="resume" class="nav-choice">
 					<a href="#resume">
-						<span id="resume-glyph" class="glyphicon glyphicon-list-alt nav-list-spans"></span>
-						<span class="nav-choice-titles nav-list-spans">Resume</span>
+						<span class="nav-choice-divs">
+							<span id="resume-glyph" class="glyphicon glyphicon-list-alt nav-list-spans"></span>
+							<span class="nav-titles">Resume</span>
+						</span>
 					</a>
 				</li>
 			</div>
 		</ul>
 	</div>
-	<div id="open-close">
+	<!-- <div id="open-close">
 		<span id="close-glyph" class="glyphicon glyphicon-chevron-left"></span>
-	</div>
+	</div> -->
 	<div id="main-container">
 		<div id="nav-spacer"></div>
 		<div id="main">
 			<div id="landing-div">
 				<img id="profile-pic" src="./assets/images/profile.jpg" alt="Profile Picture" class="img-circle img-responsive col-lg-4 text-center">
 			</div>
-			<div id="social-media" class="row">
-				<div id="social-media-inner">
-					<img src="./assets/images/facebook.png" alt="Facebook Icon" class="social-icons">
-					<img src="./assets/images/linkedin.png" alt="LinkedIn Icon" class="social-icons">
-					<img src="./assets/images/github.png" alt="GitHub Icon" class="social-icons">
-				</div>
-			</div>
 			<div class="div-line-div">
 				<div class="div-line col-lg-6"></div>
 			</div>
 			<div id="tagline-div">
-				<h2 id="tagline" class="text-center">Driven software developer with a passion for clean, effective code</h2>
+				<h2 id="tagline" class="text-center">Driven software developer with a passion for clean, efficient code</h2>
 			</div>
 			<div id="about-header" class="header col-lg-12">
-				<h1 id="about-header-text" class="header-text">About Me</h1>
+				<h1 id="about-header-text" class="header-text text-center">About Me</h1>
 			</div>
 			<div id="about-div" class="col-lg-12">
-				<p id="about-text">I am a motivated self-starter that is passionate about learning new technologies. I am currently enrolled in the Coding Bootcamp at The University of North Carolina. I have also been studying extensively outside of class, usually for hours a day. Currently, my strongest skills are in vanilla Javascript and jQuery, but I have also started learning React, Node.js, Gulp, SASS, and several other frameworks and technologies in addition to my coursework at UNC. I truly enjoy solving difficult problems and working with a team in a collaborative setting toward a common goal.</p>
+				<div class="about-panel panel panel-default col-lg-10 col-lg-offset-1">
+					<div class="panel-body">
+						<p id="about-text">I am a motivated self-starter that is passionate about learning new technologies. I am currently enrolled in the Coding Bootcamp at The University of North Carolina. I have also been studying extensively outside of class, usually for hours a day.
+							Currently, my strongest skills are in vanilla Javascript and jQuery, but I have also started learning React, Node.js, Gulp, SASS, and several other frameworks and technologies in addition to my coursework at UNC. I truly enjoy solving difficult
+							problems and working with a team in a collaborative setting toward a common goal.</p>
+					</div>
+				</div>
 			</div>
 			<div id="education-div">
 				<div id="education-header" class="header col-lg-12">
-					<h1 id="education-header-text" class="header-text">Education</h1>
+					<a name="education-link"></a>
+					<h1 id="education-header-text" class="header-text text-center">Education</h1>
 				</div>
 				<div id="education-panels-div">
 					<div class="panel panel-default col-lg-8 col-lg-offset-2 education-content-panel">
-		  				<div class="panel-body school-panels">
-		  					<div>
-		  						<img src="./assets/images/uncicon.jpg" alt="UNC Icon" class="school-icon">
-		  						<h2>The University of North Carolina</h2>
-		  						<h4>Coding Bootcamp</h4>
-		  						<h4>Graduated February 2017</h4>
-		  					</div>
-		  				</div>
+						<div class="panel-body school-panels">
+							<div class="school-logo row">
+								<img src="./assets/images/uncicon.jpg" alt="UNC Icon" class="school-icon">
+								<span id="unc-name" class="uni-name text-center col-lg-12">The University of North Carolina</span>
+							</div>
+							<div class="deg-grad">
+								<span class="degree">Coding Bootcamp</span>
+								<span class="grad-date">Graduated February 2017</span>
+							</div>
+							<ul class="ed-list">
+								<li>Topics covered include HTML, CSS, Javascript, jQuery, AJAX, REST API’s, Firebase, Node.js, MySQL, Express.js, Handlebars.js, Sequelize, MongoDB, Mongoose ORM, React,js, React Native, and C#</li>
+							</ul>
+						</div>
 					</div>
 					<div class="panel panel-default col-lg-8 col-lg-offset-2 education-content-panel">
-		  				<div class="panel-body school-panels">
-		  					<div>
-		  						<img src="./assets/images/auicon.jpg" alt="AU Icon" class="school-icon">
-		  						<h2>The American University</h2>
-		  						<h4>B.S. Business Administration</h4>
-		  						<h4>Graduated May 2012</h4>
-		  					</div>
-		  				</div>
+						<div class="panel-body school-panels">
+							<div class="school-logo row">
+								<img src="./assets/images/auicon.jpg" alt="AU Icon" class="school-icon">
+								<span class="uni-name text-center col-lg-12">The American University</span>
+							</div>
+							<div class="deg-grad">
+								<span class="degree">B.S. Business Administration</span>
+								<span class="grad-date">Graduated May 2012</span>
+							</div>
+							<ul class="ed-list">
+								<li>The degree program covered a broad range of both general education and business courses. Course topics included economics, accounting, management, finance, marketing, technology, international business, math, and others</li>
+							</ul>
+						</div>
 					</div>
 				</div>
 			</div>
 			<div id="projects-div">
 				<div id="projects-header" class="header col-lg-12">
-					<h1 id="projects-header-text" class="header-text">Projects</h1>
+					<a name="projects-link"></a>
+					<h1 id="projects-header-text" class="header-text text-center">Projects</h1>
 				</div>
 				<div id="projects-panels" class="col-lg-12">
 					<div class="panel-row col-lg-12">
 						<div class="panel panel-default projects-content-panel">
-			  				<div class="panel-body">
-			  					<img src="./assets/images/quote-screenshot.png" alt="Quote Generator Screenshot" class="img-thumbnail">
-			  				</div>
-			  				<div class="panel-footer">Panel footer</div>
+							<div class="panel-body">
+								<img src="./assets/images/quote-screenshot.png" alt="Quote Generator Screenshot" class="img-thumbnail">
+							</div>
+							<div class="text-center panel-footer projects-footer">Quote Generator</div>
 						</div>
 						<div class="panel panel-default projects-content-panel">
-			  				<div class="panel-body">
-			  					<img src="./assets/images/tic-tac-toe-screenshot.png" alt="Tic-Tac-Toe Screenshot" class="img-thumbnail">
-			  				</div>
-			  				<div class="panel-footer">Panel footer</div>
+							<div class="panel-body">
+								<img src="./assets/images/tic-tac-toe-screenshot.png" alt="Tic-Tac-Toe Screenshot" class="img-thumbnail">
+							</div>
+							<div class="text-center panel-footer projects-footer">Tic-Tac-Toe</div>
 						</div>
 						<div class="panel panel-default projects-content-panel">
-			  				<div class="panel-body">
-			  					<img src="./assets/images/weather-app-screenshot.png" alt="Weather App Screenshot" class="img-thumbnail">
-			  				</div>
-			  				<div class="panel-footer">Panel footer</div>
+							<div class="panel-body">
+								<img src="./assets/images/weather-app-screenshot.png" alt="Weather App Screenshot" class="img-thumbnail">
+							</div>
+							<div class="text-center panel-footer projects-footer">Weather App</div>
 						</div>
 					</div>
 					<div class="panel-row col-lg-12">
-						<div class="panel panel-default col-lg-4 projects-content-panel">
-			  				<div class="panel-body">
-			  				</div>
+						<div class="panel panel-default projects-content-panel">
+							<div class="panel-body">
+								<img src="./assets/images/quote-screenshot.png" alt="Quote Generator Screenshot" class="img-thumbnail">
+							</div>
+							<div class="text-center panel-footer projects-footer">Quote Generator</div>
 						</div>
-						<div class="panel panel-default col-lg-4 projects-content-panel">
-			  				<div class="panel-body">
-			  				</div>
+						<div class="panel panel-default projects-content-panel">
+							<div class="panel-body">
+								<img src="./assets/images/tic-tac-toe-screenshot.png" alt="Tic-Tac-Toe Screenshot" class="img-thumbnail">
+							</div>
+							<div class="text-center panel-footer projects-footer">Tic-Tac-Toe</div>
 						</div>
-						<div class="panel panel-default col-lg-4 projects-content-panel">
-			  				<div class="panel-body">
-			  				</div>
+						<div class="panel panel-default projects-content-panel">
+							<div class="panel-body">
+								<img src="./assets/images/weather-app-screenshot.png" alt="Weather App Screenshot" class="img-thumbnail">
+							</div>
+							<div class="text-center panel-footer projects-footer">Weather App</div>
 						</div>
 					</div>
 				</div>
 			</div>
 			<div id="skills-div">
 				<div id="skills-header" class="header col-lg-12">
-					<h1 id="skills-header-text" class="header-text">Skills</h1>
+					<a name="skills-link"></a>
+					<h1 id="skills-header-text" class="header-text text-center">Skills</h1>
 				</div>
 				<div id="skills-panels-div">
-					<div class="panel panel-default col-lg-8 col-lg-offset-2 skills-content-panel">		  		<div class="panel-body">
+					<div class="panel panel-default col-lg-8 col-lg-offset-2 skills-content-panel">
+						<div class="panel-body">
 							<div>
 								<h3 class="text-center skill-subheader">HTML/CSS</h3>
 							</div>
@@ -188,33 +214,33 @@
 							</div>
 							<div class="skill-panel">
 								<i class="devicon-html5-plain-wordmark colored"></i>
-			  					<i class="devicon-css3-plain-wordmark colored"></i>
-			  					<i class="devicon-bootstrap-plain-wordmark colored"></i>
-			  					<i class="devicon-sass-original colored"></i>
+								<i class="devicon-css3-plain-wordmark colored"></i>
+								<i class="devicon-bootstrap-plain-wordmark colored"></i>
+								<i class="devicon-sass-original colored"></i>
 							</div>
-		  				</div>
+						</div>
 					</div>
 					<div class="panel panel-default col-lg-8 col-lg-offset-2 skills-content-panel">
-		  				<div class="panel-body">
-		  					<div>
+						<div class="panel-body">
+							<div>
 								<h3 class="text-center skill-subheader">Javascript</h3>
 							</div>
 							<div class="skill-div-line-div">
 								<div class="skill-div-line col-lg-10"></div>
 							</div>
 							<div class="skill-panel">
-			  					<i class="devicon-javascript-plain colored"></i>
-			  					<i class="devicon-nodejs-plain-wordmark colored"></i>
-			  					<i class="devicon-react-original-wordmark colored"></i>
-			  					<i class="devicon-jquery-plain-wordmark colored"></i>
-			  					<i class="devicon-express-original-wordmark"></i>
-			  					<i class="devicon-gulp-plain colored"></i>
-			  				</div>
-		  				</div>
+								<i class="devicon-javascript-plain colored"></i>
+								<i class="devicon-nodejs-plain-wordmark colored"></i>
+								<i class="devicon-react-original-wordmark colored"></i>
+								<i class="devicon-jquery-plain-wordmark colored"></i>
+								<i class="devicon-express-original-wordmark"></i>
+								<i class="devicon-gulp-plain colored"></i>
+							</div>
+						</div>
 					</div>
 					<div class="panel panel-default col-lg-8 col-lg-offset-2 skills-content-panel">
-		  				<div class="panel-body">
-		  					<div>
+						<div class="panel-body">
+							<div>
 								<h3 class="text-center skill-subheader">Other</h3>
 							</div>
 							<div class="skill-div-line-div">
@@ -222,94 +248,97 @@
 							</div>
 							<div class="skill-panel">
 								<i class="devicon-linux-plain colored"></i>
-			  					<i class="devicon-github-plain-wordmark colored"></i>
-			  					<i class="devicon-heroku-line-wordmark colored"></i>
-			  					<i class="devicon-mongodb-plain-wordmark colored"></i>
-			  				 	<i class="devicon-mysql-plain-wordmark colored"></i>
+								<i class="devicon-github-plain-wordmark colored"></i>
+								<i class="devicon-heroku-line-wordmark colored"></i>
+								<i class="devicon-mongodb-plain-wordmark colored"></i>
+								<i class="devicon-mysql-plain-wordmark colored"></i>
 							</div>
-		  				</div>
+						</div>
 					</div>
 				</div>
 			</div>
 			<div id="experience-div">
 				<div id="experience-header" class="header col-lg-12">
-					<h1 id="experience-header-text" class="header-text">Work Experience</h1>
+					<a name="experience-link"></a>
+					<h1 id="experience-header-text" class="header-text text-center">Work Experience</h1>
 				</div>
 				<div id="experience-panels-div">
 					<div class="panel panel-default col-lg-8 col-lg-offset-2 experience-content-panel">
-		  				<div class="panel-body">
-		  					<div class="job-location">
-			  					<span class="exp-job">Bound'ry Events and Caterings</span>
-			  					<span class="exp-location">Nashville, TN</span>
-		  					</div>
-		  					<h4 class="exp-title">Manager and Event Coordinator</h4>
-		  					<h4 class="exp-date">October 2012 - June 2017</h4>
-		  					<ul class="exp-description">
-		  						<li>Takes inventory using BevSpot inventory system, manages pars and orders product from distributors</li>
-		  						<li>Staffs bartenders and servers for events in the event space and offsite</li>
-		  						<li>On-site service captain/event coordinator for on-site and off-site events</li>
-		  						<li>Bartends three nights a week at an on-site bar that is open to the public</li>
-		  						<li>Completes other administrative tasks in an office setting</li>
-		  					</ul>
-		  				</div>
+						<div class="panel-body">
+							<div class="job-location">
+								<span class="exp-job">Bound'ry Events and Caterings</span>
+								<span class="exp-location">Nashville, TN</span>
+							</div>
+							<h4 class="exp-title">Manager and Event Coordinator</h4>
+							<h4 class="exp-date">October 2012 - June 2017</h4>
+							<ul class="exp-description">
+								<li>Takes inventory using BevSpot inventory system, manages pars and orders product from distributors</li>
+								<li>Staffs bartenders and servers for events in the event space and offsite</li>
+								<li>On-site service captain/event coordinator for on-site and off-site events</li>
+								<li>Bartends three nights a week at an on-site bar that is open to the public</li>
+								<li>Completes other administrative tasks in an office setting</li>
+							</ul>
+						</div>
 					</div>
 					<div class="panel panel-default col-lg-8 col-lg-offset-2 experience-content-panel">
-		  				<div class="panel-body">
-		  					<div class="job-location">
-			  					<span class="exp-job">Thomas Nicholas Band</span>
-			  					<span class="exp-location">Los Angeles, CA</span>
-		  					</div>
-		  					<h4 class="exp-title">Bass Player</h4>
-		  					<h4 class="exp-date">November 2014 - May 2015</h4>
-		  					<ul class="exp-description">
-		  						<li>Toured for several months with the band across the United States and United Kingdom</li>
-		  						<li>Performed on several television broadcasts including WGN’s “Good Morning Chicago”</li>
-		  						<li>Recording credit for bass on “Security” album recorded at Bell Sound Studios in Hollywood, CA</li>
-		  						<li>Performed with John Popper (Blues Traveler) at the Viper Room in Hollywood, CA</li>
-		  					</ul>
-		  				</div>
+						<div class="panel-body">
+							<div class="job-location">
+								<span class="exp-job">Thomas Nicholas Band</span>
+								<span class="exp-location">Los Angeles, CA</span>
+							</div>
+							<h4 class="exp-title">Bass Player</h4>
+							<h4 class="exp-date">November 2014 - May 2015</h4>
+							<ul class="exp-description">
+								<li>Toured for several months with the band across the United States and United Kingdom</li>
+								<li>Performed on several television broadcasts including WGN’s “Good Morning Chicago”</li>
+								<li>Recording credit for bass on “Security” album recorded at Bell Sound Studios in Hollywood, CA</li>
+								<li>Performed with John Popper (Blues Traveler) at the Viper Room in Hollywood, CA</li>
+							</ul>
+						</div>
 					</div>
 					<div class="panel panel-default col-lg-8 col-lg-offset-2 experience-content-panel">
-		  				<div class="panel-body">
-		  					<div class="job-location">
-			  					<span class="exp-job">Power Chord Guitar Lessons</span>
-			  					<span class="exp-location">Washington, DC</span>
-			  				</div>
-		  					<h4 class="exp-title">Owner</h4>
-		  					<h4 class="exp-date">April 2008 - January 2011</h4>
-		  					<ul class="exp-description">
-		  						<li>Hired and managed up to four guitar teachers at a time who maintained employment with company longer than one year</li>
-		  						<li>Managed all payroll and accounting records</li>
-		  						<li>Developed a marketing and advertising plan that attracted over one hundred customers</li>
-		  						<li>Communicated with customers and resolved all billing, service and technical issues with website</li>
-		  						<li>Developed and maintained a web site that averaged approximately twenty views a day</li>
-		  					</ul>
-		  				</div>
+						<div class="panel-body">
+							<div class="job-location">
+								<span class="exp-job">Power Chord Guitar Lessons</span>
+								<span class="exp-location">Washington, DC</span>
+							</div>
+							<h4 class="exp-title">Owner</h4>
+							<h4 class="exp-date">April 2008 - January 2011</h4>
+							<ul class="exp-description">
+								<li>Hired and managed up to four guitar teachers at a time who maintained employment with company longer than one year</li>
+								<li>Managed all payroll and accounting records</li>
+								<li>Developed a marketing and advertising plan that attracted over one hundred customers</li>
+								<li>Communicated with customers and resolved all billing, service and technical issues with website</li>
+								<li>Developed and maintained a web site that averaged approximately twenty views a day</li>
+							</ul>
+						</div>
 					</div>
 				</div>
 			</div>
-			<div id="contact-div">
-				<div id="contact-header" class="header col-lg-12">
-					<h1 id="contact-header-text" class="header-text">Contact</h1>
+			<div id="connect-div">
+				<div id="connect-header" class="header col-lg-12">
+					<a name="connect-link"></a>
+					<h1 id="connect-header-text" class="header-text text-center">Connect</h1>
 				</div>
-				<form class="col-lg-8 col-lg-offset-2">
-  					<div class="form-group">
-   						<label for="inputName" class="labels">Name</label>
-    					<input type="email" class="form-control" id="inputName">
- 					</div>
-  					<div class="form-group">
-    					<label for="inputEmail" class="labels">E-mail</label>
-    					<input type="email" class="form-control" id="inputEmail">
-  					</div>
-  					<div class="form-group">
-						<label for="message" class="labels">Message</label>
-						<textarea id="message" class="form-control" rows="3"></textarea>
-  					</div>
-  					<button type="submit" class="btn btn-default">Submit</button>
-  				</form>
-			</div>	
+				<div id="social-media" class="col-lg-12">
+					<div id="social-media-inner">
+						<a href="https://www.facebook.com/ej.morgan.9" target="blank">
+							<img src="./assets/images/facebook.png" alt="Facebook Icon" class="social-icons">
+						</a>
+						<a href="https://www.linkedin.com/in/ej-morgan-9b66486b/" target="blank">
+							<img src="./assets/images/linkedin.png" alt="LinkedIn Icon" class="social-icons">
+						</a>
+						<a href="https://github.com/EJM6234" target="blank">
+							<img src="./assets/images/github.png" alt="GitHub Icon" class="social-icons">
+						</a>
+					</div>
+				</div>
+			</div>
 		</div>
 	</div>
+
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
 	<script type="text/javascript" src="./assets/javascript/app.js"></script>
 </body>
+
 </html>
