@@ -3,7 +3,8 @@
 <!-- TODO: Media queries for different browser widths -->
 <!-- TODO: Update project tabs with most recent/relevant projects -->
 <!-- TODO: Project tabs need to flip and display info on project -->
-<!-- TODO: Links on navbar scroll to relevant section -->
+<!-- TODO: Add email somewhere -->
+<!-- TODO: Cause resume to be downloaded when nav link is clicked -->
 
 <head>
 	<title>EJ Morgan | Software Developer Portfolio</title>
@@ -85,6 +86,36 @@
 			</div>
 		</ul>
 	</div>
+	<div id="nav-container-small-screen">
+		<nav id="nav-small-screen" class="navbar navbar-default navbar-fixed-top">
+			<div id="small-nav-my-name">
+				<span>EJ Morgan</span>
+			</div>
+			<div id="small-nav-glyphs">
+				<a href="#about-header" class="small-nav-choice">
+					<span id="about-glyph" class="glyphicon-small-nav glyphicon glyphicon-user nav-list-spans"></span>
+				</a>
+				<a href="#education-header" class="small-nav-choice">
+					<span id="education-glyph" class="glyphicon-small-nav glyphicon glyphicon-apple nav-list-spans"></span>
+				</a>
+				<a href="#projects-header" class="small-nav-choice">
+					<span id="projects-glyph" class="glyphicon-small-nav glyphicon glyphicon-briefcase nav-list-spans"></span>
+				</a>
+				<a href="#skills-header" class="small-nav-choice">
+					<span id="skills-glyph" class="glyphicon-small-nav glyphicon glyphicon-stats nav-list-spans"></span>
+				</a>
+				<a href="#experience-header" class="small-nav-choice">
+					<span id="experience-glyph" class="glyphicon-small-nav glyphicon glyphicon-road nav-list-spans"></span>
+				</a>
+				<a href="#connect-header" class="small-nav-choice">
+					<span id="connect-glyph" class="glyphicon-small-nav glyphicon glyphicon-envelope nav-list-spans"></span>
+				</a>
+				<a href="#resume-header" class="small-nav-choice">
+					<span id="resume-glyph" class="glyphicon-small-nav glyphicon glyphicon-list-alt nav-list-spans"></span>
+				</a>
+			</div>
+		</nav>
+	</div>
 	<!-- <div id="open-close">
 		<span id="close-glyph" class="glyphicon glyphicon-chevron-left"></span>
 	</div> -->
@@ -104,7 +135,7 @@
 				<h1 id="about-header-text" class="header-text text-center">About Me</h1>
 			</div>
 			<div id="about-div" class="col-lg-12">
-				<div class="about-panel panel panel-default col-lg-10 col-lg-offset-1">
+				<div class="about-panel panel panel-default col-lg-10 col-lg-offset-1 panel-body">
 					<div class="panel-body">
 						<p id="about-text">I am a motivated self-starter that is passionate about learning new technologies. I am currently enrolled in the Coding Bootcamp at The University of North Carolina. I have also been studying extensively outside of class, usually for hours a day.
 							Currently, my strongest skills are in vanilla Javascript and jQuery, but I have also started learning React, Node.js, Gulp, SASS, and several other frameworks and technologies in addition to my coursework at UNC. I truly enjoy solving difficult
@@ -157,43 +188,65 @@
 				</div>
 				<div id="projects-panels" class="col-lg-12">
 					<div class="panel-row col-lg-12">
-						<div class="panel panel-default projects-content-panel">
+						<div class="panel panel-default projects-content-panel col-lg-5 col-md-5">
 							<div class="panel-body">
 								<img src="./assets/images/quote-screenshot.png" alt="Quote Generator Screenshot" class="img-thumbnail">
 							</div>
 							<div class="text-center panel-footer projects-footer">Quote Generator</div>
 						</div>
-						<div class="panel panel-default projects-content-panel">
+						<div class="panel panel-default projects-content-panel col-lg-5 col-md-5">
 							<div class="panel-body">
 								<img src="./assets/images/tic-tac-toe-screenshot.png" alt="Tic-Tac-Toe Screenshot" class="img-thumbnail">
 							</div>
 							<div class="text-center panel-footer projects-footer">Tic-Tac-Toe</div>
-						</div>
-						<div class="panel panel-default projects-content-panel">
-							<div class="panel-body">
-								<img src="./assets/images/weather-app-screenshot.png" alt="Weather App Screenshot" class="img-thumbnail">
-							</div>
-							<div class="text-center panel-footer projects-footer">Weather App</div>
 						</div>
 					</div>
 					<div class="panel-row col-lg-12">
-						<div class="panel panel-default projects-content-panel">
+						<div class="panel panel-default projects-content-panel col-lg-5 col-md-5">
 							<div class="panel-body">
 								<img src="./assets/images/quote-screenshot.png" alt="Quote Generator Screenshot" class="img-thumbnail">
 							</div>
 							<div class="text-center panel-footer projects-footer">Quote Generator</div>
 						</div>
-						<div class="panel panel-default projects-content-panel">
+						<div class="panel panel-default projects-content-panel col-lg-5 col-md-5">
 							<div class="panel-body">
 								<img src="./assets/images/tic-tac-toe-screenshot.png" alt="Tic-Tac-Toe Screenshot" class="img-thumbnail">
 							</div>
 							<div class="text-center panel-footer projects-footer">Tic-Tac-Toe</div>
 						</div>
-						<div class="panel panel-default projects-content-panel">
+					</div>
+				</div>
+				<div id="projects-panels-small-screen" class="col-lg-12">
+					<div class="panel-row row col-lg-12">
+						<div class="panel panel-default projects-content-panel col-sm-10">
 							<div class="panel-body">
-								<img src="./assets/images/weather-app-screenshot.png" alt="Weather App Screenshot" class="img-thumbnail">
+								<img src="./assets/images/quote-screenshot.png" alt="Quote Generator Screenshot" class="img-thumbnail">
 							</div>
-							<div class="text-center panel-footer projects-footer">Weather App</div>
+							<div class="text-center panel-footer projects-footer">Quote Generator</div>
+						</div>
+					</div>
+					<div class="panel-row row col-lg-12">
+						<div class="panel panel-default projects-content-panel col-sm-10">
+							<div class="panel-body">
+								<img src="./assets/images/tic-tac-toe-screenshot.png" alt="Tic-Tac-Toe Screenshot" class="img-thumbnail">
+							</div>
+							<div class="text-center panel-footer projects-footer">Tic-Tac-Toe</div>
+						</div>
+					</div>
+					<div class="panel-row row col-lg-12">
+						<div class="panel panel-default projects-content-panel col-sm-10">
+							<div class="panel-body">
+								<img src="./assets/images/quote-screenshot.png" alt="Quote Generator Screenshot" class="img-thumbnail">
+							</div>
+							<div class="text-center panel-footer projects-footer">Quote Generator</div>
+						</div>
+					</div>
+					<div class="panel-row row col-lg-12">
+						<div class="panel panel-default projects-content-panel col-sm-10">
+							<div class="panel-body">
+								<img src="./assets/images/tic-tac-toe-screenshot.png" alt="Tic-Tac-Toe Screenshot" class="img-thumbnail">
+							</div>
+							<div class="text-center panel-footer projects-footer">Tic-Tac-Toe</div>
 						</div>
 					</div>
 				</div>

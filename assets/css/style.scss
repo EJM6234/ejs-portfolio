@@ -54,11 +54,7 @@ html {
 					padding-bottom: 10px;
 
 					#nav-my-name {
-						font-family: 'Josefin Slab', serif;
-						font-size: 47px;
-						font-weight: 700;
-						color: $black;
-						line-height: normal;
+						@extend %nav-my-name;
 					}
 
 					#nav-my-job {
@@ -175,6 +171,57 @@ html {
 								margin: 11px;
 							}
 						}
+					}
+				}
+			}
+		}
+
+		#nav-container-small-screen {
+			nav {
+				display: flex;
+				justify-content: space-between;
+
+				#small-nav-my-name {
+					@extend %nav-my-name;
+					margin: 10px 0;
+				}
+
+				#small-nav-glyphs {
+					.small-nav-choice {
+						cursor: pointer;
+					}
+
+					#about-glyph {
+						color: $dark-teal;
+					}
+
+					#education-glyph {
+						color: $orange;
+					}
+
+					#projects-glyph {
+						color: $teal;
+					}
+
+					#skills-glyph {
+						color: $off-white;
+					}
+
+					#experience-glyph {
+						color: $salmon;
+					}
+
+					#connect-glyph {
+						color: $brown;
+					}
+
+					#resume-glyph {
+						color: $black;
+					}
+
+					.glyphicon-small-nav {
+						font-size: 36px;
+						margin: 11px 5px 0;
 					}
 				}
 			}
@@ -333,7 +380,6 @@ html {
 							.projects-content-panel {
 								margin: 20px 0 0;
 								padding: 0;
-								width: 30%;
 
 								.projects-footer {
 									font-family: 'Josefin Slab', serif;
@@ -458,6 +504,55 @@ html {
 					}
 				}
 			}
+		}
+	}
+}
+@media screen and (min-width: 992px) and (max-width: 1200px) {}
+@media screen and (min-width: 768px) and (max-width: 992px) {}
+@media screen and (min-width: 992px) {
+	#projects-panels-small-screen {
+		display: none;
+	}
+}
+@media screen and (min-width: 768px) {
+	#nav-container-small-screen {
+		display: none;
+	}
+}
+@media screen and (max-width: 991px) {
+	#projects-panels {
+		display: none;
+	}
+
+	#projects-panels-small-screen {
+		.panel-row {
+			display: flex;
+			justify-content: space-around;
+
+			.projects-content-panel {
+				margin: 20px 0 0;
+				padding: 0;
+
+				.projects-footer {
+					font-family: 'Josefin Slab', serif;
+					font-size: 24px;
+					font-weight: 700;
+					color: $teal;
+				}
+			}
+		}
+	}
+}
+@media screen and (max-width: 768px) {
+	body {
+		padding-top: 70px;
+
+		#nav-container {
+			display: none;
+		}
+
+		#nav-spacer {
+			display: none;
 		}
 	}
 }

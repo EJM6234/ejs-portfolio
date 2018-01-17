@@ -13,6 +13,15 @@ html body #nav-container ul #nav-choices li#skills::before {
   transition: all 0.3s;
   margin: -11px 0; }
 
+body body #nav-container ul #name-title #nav-my-name,
+html body #nav-container ul #name-title #nav-my-name, body body #nav-container-small-screen nav #small-nav-my-name,
+html body #nav-container-small-screen nav #small-nav-my-name {
+  font-family: 'Josefin Slab', serif;
+  font-size: 47px;
+  font-weight: 700;
+  color: #5C4B51;
+  line-height: normal; }
+
 body,
 html {
   height: 100%; }
@@ -58,13 +67,6 @@ html {
           list-style-type: none;
           border-bottom: 1px solid #888888;
           padding-bottom: 10px; }
-          body body #nav-container ul #name-title #nav-my-name,
-          html body #nav-container ul #name-title #nav-my-name {
-            font-family: 'Josefin Slab', serif;
-            font-size: 47px;
-            font-weight: 700;
-            color: #5C4B51;
-            line-height: normal; }
           body body #nav-container ul #name-title #nav-my-job,
           html body #nav-container ul #name-title #nav-my-job {
             font-family: 'Josefin Slab', serif;
@@ -158,6 +160,41 @@ html {
               body body #nav-container ul #nav-choices .nav-choice .nav-choice-divs .nav-titles,
               html body #nav-container ul #nav-choices .nav-choice .nav-choice-divs .nav-titles {
                 margin: 11px; }
+    body body #nav-container-small-screen nav,
+    html body #nav-container-small-screen nav {
+      display: flex;
+      justify-content: space-between; }
+      body body #nav-container-small-screen nav #small-nav-my-name,
+      html body #nav-container-small-screen nav #small-nav-my-name {
+        margin: 10px 0; }
+      body body #nav-container-small-screen nav #small-nav-glyphs .small-nav-choice,
+      html body #nav-container-small-screen nav #small-nav-glyphs .small-nav-choice {
+        cursor: pointer; }
+      body body #nav-container-small-screen nav #small-nav-glyphs #about-glyph,
+      html body #nav-container-small-screen nav #small-nav-glyphs #about-glyph {
+        color: #2E5458; }
+      body body #nav-container-small-screen nav #small-nav-glyphs #education-glyph,
+      html body #nav-container-small-screen nav #small-nav-glyphs #education-glyph {
+        color: #F3B562; }
+      body body #nav-container-small-screen nav #small-nav-glyphs #projects-glyph,
+      html body #nav-container-small-screen nav #small-nav-glyphs #projects-glyph {
+        color: #8CBEB2; }
+      body body #nav-container-small-screen nav #small-nav-glyphs #skills-glyph,
+      html body #nav-container-small-screen nav #small-nav-glyphs #skills-glyph {
+        color: #F2EBBF; }
+      body body #nav-container-small-screen nav #small-nav-glyphs #experience-glyph,
+      html body #nav-container-small-screen nav #small-nav-glyphs #experience-glyph {
+        color: #F06060; }
+      body body #nav-container-small-screen nav #small-nav-glyphs #connect-glyph,
+      html body #nav-container-small-screen nav #small-nav-glyphs #connect-glyph {
+        color: #73573F; }
+      body body #nav-container-small-screen nav #small-nav-glyphs #resume-glyph,
+      html body #nav-container-small-screen nav #small-nav-glyphs #resume-glyph {
+        color: #5C4B51; }
+      body body #nav-container-small-screen nav #small-nav-glyphs .glyphicon-small-nav,
+      html body #nav-container-small-screen nav #small-nav-glyphs .glyphicon-small-nav {
+        font-size: 36px;
+        margin: 11px 5px 0; }
     body body #open-close:hover,
     html body #open-close:hover {
       cursor: pointer;
@@ -273,8 +310,7 @@ html {
         body body #main-container #main #projects-div #projects-panels .panel-row .projects-content-panel,
         html body #main-container #main #projects-div #projects-panels .panel-row .projects-content-panel {
           margin: 20px 0 0;
-          padding: 0;
-          width: 30%; }
+          padding: 0; }
           body body #main-container #main #projects-div #projects-panels .panel-row .projects-content-panel .projects-footer,
           html body #main-container #main #projects-div #projects-panels .panel-row .projects-content-panel .projects-footer {
             font-family: 'Josefin Slab', serif;
@@ -359,3 +395,34 @@ html {
             -moz-box-shadow: 0 0 26px -6px #222;
             box-shadow: 0 0 26px -6px #222;
             cursor: pointer; }
+
+@media screen and (min-width: 992px) {
+  #projects-panels-small-screen {
+    display: none; } }
+
+@media screen and (min-width: 768px) {
+  #nav-container-small-screen {
+    display: none; } }
+
+@media screen and (max-width: 991px) {
+  #projects-panels {
+    display: none; }
+  #projects-panels-small-screen .panel-row {
+    display: flex;
+    justify-content: space-around; }
+    #projects-panels-small-screen .panel-row .projects-content-panel {
+      margin: 20px 0 0;
+      padding: 0; }
+      #projects-panels-small-screen .panel-row .projects-content-panel .projects-footer {
+        font-family: 'Josefin Slab', serif;
+        font-size: 24px;
+        font-weight: 700;
+        color: #8CBEB2; } }
+
+@media screen and (max-width: 768px) {
+  body {
+    padding-top: 70px; }
+    body #nav-container {
+      display: none; }
+    body #nav-spacer {
+      display: none; } }
