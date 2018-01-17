@@ -25,13 +25,6 @@ html body #nav-container-small-screen nav #small-nav-my-name {
 body,
 html {
   height: 100%; }
-  body .div-line-div,
-  html .div-line-div {
-    display: flex; }
-    body .div-line-div .div-line,
-    html .div-line-div .div-line {
-      margin: 26px auto;
-      border-bottom: 2px solid #5C4B51; }
   body .skill-div-line-div,
   html .skill-div-line-div {
     display: flex; }
@@ -110,13 +103,12 @@ html {
         html body #nav-container ul #nav-choices li#projects:hover::before,
         html body #nav-container ul #nav-choices li#resume:hover::before,
         html body #nav-container ul #nav-choices li#skills:hover::before {
-          width: 26%;
+          width: 20%;
           opacity: 0.7;
           cursor: pointer; }
         body body #nav-container ul #nav-choices,
         html body #nav-container ul #nav-choices {
           margin: 25px 0;
-          position: fixed;
           bottom: 50px; }
           body body #nav-container ul #nav-choices .nav-choice:hover,
           html body #nav-container ul #nav-choices .nav-choice:hover {
@@ -222,6 +214,27 @@ html {
       body body #main-container #nav-spacer,
       html body #main-container #nav-spacer {
         margin-left: 240px; }
+      body body #main-container #main #landing-div,
+      html body #main-container #main #landing-div {
+        display: flex; }
+        body body #main-container #main #landing-div #profile-pic,
+        html body #main-container #main #landing-div #profile-pic {
+          margin: 30px auto 10px;
+          -moz-width: 45%; }
+      body body #main-container #main #email,
+      html body #main-container #main #email {
+        font-family: 'Josefin Slab', serif;
+        font-size: 25px;
+        font-weight: 500;
+        color: #2E5458; }
+      body body #main-container #main .div-line-div,
+      html body #main-container #main .div-line-div {
+        padding: 0 20px; }
+        body body #main-container #main .div-line-div .div-line,
+        html body #main-container #main .div-line-div .div-line {
+          margin: 26px auto;
+          border-bottom: 2px solid #5C4B51;
+          width: 500px; }
       body body #main-container #main .header,
       html body #main-container #main .header {
         background-color: #8CBEB2; }
@@ -230,37 +243,19 @@ html {
         font-family: 'Josefin Slab', serif;
         font-size: 59px;
         font-weight: 700;
-        color: #5C4B51;
-        margin: 15px 0; }
-      body body #main-container #main #landing-div,
-      html body #main-container #main #landing-div {
-        display: flex; }
-        body body #main-container #main #landing-div #profile-pic,
-        html body #main-container #main #landing-div #profile-pic {
-          margin: 30px auto 10px;
-          -moz-width: 45%; }
-      body body #main-container #main #tagline-div #tagline,
-      html body #main-container #main #tagline-div #tagline {
-        font-family: 'Josefin Slab', serif;
-        font-size: 59px;
-        font-weight: 400;
-        font-style: italic;
-        color: #2E5458;
-        margin-top: 0; }
-      body body #main-container #main #about-div,
-      html body #main-container #main #about-div {
-        padding: 40px; }
-        body body #main-container #main #about-div .about-panel,
-        html body #main-container #main #about-div .about-panel {
-          margin-bottom: 0;
-          text-align: justify; }
-          body body #main-container #main #about-div .about-panel #about-text,
-          html body #main-container #main #about-div .about-panel #about-text {
-            font-family: 'Josefin Slab', serif;
-            font-size: 20px;
-            font-weight: 400;
-            text-indent: 50px;
-            margin-bottom: 0; }
+        color: #5C4B51; }
+      body body #main-container #main #about-div .about-panel,
+      html body #main-container #main #about-div .about-panel {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        text-align: justify; }
+        body body #main-container #main #about-div .about-panel #about-text,
+        html body #main-container #main #about-div .about-panel #about-text {
+          font-family: 'Josefin Slab', serif;
+          font-size: 20px;
+          font-weight: 400;
+          text-indent: 50px;
+          margin-bottom: 0; }
       body body #main-container #main #education-div #education-header,
       html body #main-container #main #education-div #education-header {
         margin-bottom: 20px; }
@@ -276,33 +271,29 @@ html {
         body body #main-container #main #education-div #education-panels-div .school-panels .school-logo .uni-name,
         html body #main-container #main #education-div #education-panels-div .school-panels .school-logo .uni-name {
           font-family: 'Josefin Slab', serif;
-          font-size: 45px;
+          font-size: 2em;
           font-weight: 800; }
         body body #main-container #main #education-div #education-panels-div .school-panels .school-logo #unc-name,
         html body #main-container #main #education-div #education-panels-div .school-panels .school-logo #unc-name {
           margin-top: 3px; }
-      body body #main-container #main #education-div #education-panels-div .school-panels .deg-grad,
-      html body #main-container #main #education-div #education-panels-div .school-panels .deg-grad {
-        display: flex;
-        justify-content: space-between;
-        margin: auto 25px; }
-        body body #main-container #main #education-div #education-panels-div .school-panels .deg-grad .degree,
-        html body #main-container #main #education-div #education-panels-div .school-panels .deg-grad .degree {
-          font-family: 'Josefin Slab', serif;
-          font-size: 20px;
-          font-weight: 400; }
-        body body #main-container #main #education-div #education-panels-div .school-panels .deg-grad .grad-date,
-        html body #main-container #main #education-div #education-panels-div .school-panels .deg-grad .grad-date {
-          font-family: 'Josefin Slab', serif;
-          font-size: 20px;
-          font-weight: 400;
-          font-style: italic; }
+      body body #main-container #main #education-div #education-panels-div .school-panels .degree,
+      html body #main-container #main #education-div #education-panels-div .school-panels .degree {
+        font-family: 'Josefin Slab', serif;
+        font-size: 20px;
+        font-weight: 400; }
+      body body #main-container #main #education-div #education-panels-div .school-panels .grad-date,
+      html body #main-container #main #education-div #education-panels-div .school-panels .grad-date {
+        font-family: 'Josefin Slab', serif;
+        font-size: 20px;
+        font-weight: 400;
+        font-style: italic; }
       body body #main-container #main #education-div #education-panels-div .school-panels .ed-list,
       html body #main-container #main #education-div #education-panels-div .school-panels .ed-list {
         font-family: 'Josefin Slab', serif;
         font-size: 16px;
         font-weight: 400;
-        margin-top: 10px; }
+        margin-top: 10px;
+        text-align: center; }
       body body #main-container #main #projects-div #projects-panels .panel-row,
       html body #main-container #main #projects-div #projects-panels .panel-row {
         display: flex;
@@ -396,11 +387,49 @@ html {
             box-shadow: 0 0 26px -6px #222;
             cursor: pointer; }
 
+@media screen and (min-width: 1084px) {
+  #location-email-div {
+    margin-top: 64px; }
+  .div-line {
+    margin: 22px auto; }
+  #tagline-div #tagline {
+    font-family: 'Josefin Slab', serif;
+    font-weight: 400;
+    font-style: italic;
+    color: #2E5458;
+    margin-top: 0;
+    padding: 0 20px;
+    font-size: 59px; } }
+
+@media screen and (max-width: 1083px) {
+  #location-email-div {
+    margin-top: 10px; }
+  .div-line {
+    margin: 21px auto; }
+  #tagline {
+    font-family: 'Josefin Slab', serif;
+    font-weight: 400;
+    font-style: italic;
+    color: #2E5458;
+    margin-top: 0;
+    padding: 0 20px;
+    font-size: 59px; } }
+
+@media screen and (max-width: 898px) {
+  #tagline {
+    font-family: 'Josefin Slab', serif;
+    font-weight: 400;
+    font-style: italic;
+    color: #2E5458;
+    margin-top: 0;
+    padding: 0 20px;
+    font-size: 56px; } }
+
 @media screen and (min-width: 992px) {
   #projects-panels-small-screen {
     display: none; } }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 769px) {
   #nav-container-small-screen {
     display: none; } }
 

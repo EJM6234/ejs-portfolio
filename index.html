@@ -1,9 +1,7 @@
 <!DOCTYPE html>
 <html>
-<!-- TODO: Media queries for different browser widths -->
 <!-- TODO: Update project tabs with most recent/relevant projects -->
 <!-- TODO: Project tabs need to flip and display info on project -->
-<!-- TODO: Add email somewhere -->
 <!-- TODO: Cause resume to be downloaded when nav link is clicked -->
 
 <head>
@@ -76,7 +74,7 @@
 					</a>
 				</li>
 				<li id="resume" class="nav-choice">
-					<a href="#resume">
+					<a href="https://www.dropbox.com/s/otnviz7srrm6mrw/Edward%20Morgan%20Software%20Developer%20Resume%2010192017.pdf?dl=0" target="blank">
 						<span class="nav-choice-divs">
 							<span id="resume-glyph" class="glyphicon glyphicon-list-alt nav-list-spans"></span>
 							<span class="nav-titles">Resume</span>
@@ -110,7 +108,7 @@
 				<a href="#connect-header" class="small-nav-choice">
 					<span id="connect-glyph" class="glyphicon-small-nav glyphicon glyphicon-envelope nav-list-spans"></span>
 				</a>
-				<a href="#resume-header" class="small-nav-choice">
+				<a href="https://www.dropbox.com/s/otnviz7srrm6mrw/Edward%20Morgan%20Software%20Developer%20Resume%2010192017.pdf?dl=0" class="small-nav-choice" target="blank">
 					<span id="resume-glyph" class="glyphicon-small-nav glyphicon glyphicon-list-alt nav-list-spans"></span>
 				</a>
 			</div>
@@ -123,19 +121,22 @@
 		<div id="nav-spacer"></div>
 		<div id="main">
 			<div id="landing-div">
-				<img id="profile-pic" src="./assets/images/profile.jpg" alt="Profile Picture" class="img-circle img-responsive col-lg-4 text-center">
+				<img id="profile-pic" src="./assets/images/profile.jpg" alt="Profile Picture" class="img-circle img-responsive text-center">
 			</div>
-			<div class="div-line-div">
-				<div class="div-line col-lg-6"></div>
+			<div id="location-email-div" class="text-center col-xs-12">
+				<div id="email">Durham, NC / EJM62345@gmail.com</div>
+			</div>
+			<div class="div-line-div col-xs-12">
+				<div class="div-line"></div>
 			</div>
 			<div id="tagline-div">
 				<h2 id="tagline" class="text-center">Driven software developer with a passion for clean, efficient code</h2>
 			</div>
-			<div id="about-header" class="header col-lg-12">
-				<h1 id="about-header-text" class="header-text text-center">About Me</h1>
-			</div>
-			<div id="about-div" class="col-lg-12">
-				<div class="about-panel panel panel-default col-lg-10 col-lg-offset-1 panel-body">
+			<div id="about-div">
+				<div id="about-header" class="header col-xs-12">
+					<h1 id="about-header-text" class="header-text text-center">About Me</h1>
+				</div>
+				<div class="about-panel panel panel-default col-xs-10 col-xs-offset-1 col-md-8 col-md-offset-2">
 					<div class="panel-body">
 						<p id="about-text">I am a motivated self-starter that is passionate about learning new technologies. I am currently enrolled in the Coding Bootcamp at The University of North Carolina. I have also been studying extensively outside of class, usually for hours a day.
 							Currently, my strongest skills are in vanilla Javascript and jQuery, but I have also started learning React, Node.js, Gulp, SASS, and several other frameworks and technologies in addition to my coursework at UNC. I truly enjoy solving difficult
@@ -144,50 +145,40 @@
 				</div>
 			</div>
 			<div id="education-div">
-				<div id="education-header" class="header col-lg-12">
-					<a name="education-link"></a>
+				<div id="education-header" class="header col-xs-12">
 					<h1 id="education-header-text" class="header-text text-center">Education</h1>
 				</div>
 				<div id="education-panels-div">
-					<div class="panel panel-default col-lg-8 col-lg-offset-2 education-content-panel">
+					<div class="panel panel-default col-xs-10 col-xs-offset-1 col-md-8 col-md-offset-2 education-content-panel">
 						<div class="panel-body school-panels">
 							<div class="school-logo row">
 								<img src="./assets/images/uncicon.jpg" alt="UNC Icon" class="school-icon">
-								<span id="unc-name" class="uni-name text-center col-lg-12">The University of North Carolina</span>
+								<div id="unc-name" class="uni-name text-center col-lg-12">The University of North Carolina</div>
 							</div>
-							<div class="deg-grad">
-								<span class="degree">Coding Bootcamp</span>
-								<span class="grad-date">Graduated February 2017</span>
-							</div>
-							<ul class="ed-list">
-								<li>Topics covered include HTML, CSS, Javascript, jQuery, AJAX, REST API’s, Firebase, Node.js, MySQL, Express.js, Handlebars.js, Sequelize, MongoDB, Mongoose ORM, React,js, React Native, and C#</li>
-							</ul>
+							<div class="degree text-center">Coding Bootcamp</div>
+							<div class="grad-date text-center">Graduated February 2017</div>
+							<p class="ed-list">Topics covered include HTML, CSS, Javascript, jQuery, AJAX, REST API’s, Firebase, Node.js, MySQL, Express.js, Handlebars.js, Sequelize, MongoDB, Mongoose ORM, React,js, React Native, and C#</p>
 						</div>
 					</div>
-					<div class="panel panel-default col-lg-8 col-lg-offset-2 education-content-panel">
+					<div class="panel panel-default col-xs-10 col-xs-offset-1 col-md-8 col-md-offset-2 education-content-panel">
 						<div class="panel-body school-panels">
 							<div class="school-logo row">
 								<img src="./assets/images/auicon.jpg" alt="AU Icon" class="school-icon">
-								<span class="uni-name text-center col-lg-12">The American University</span>
+								<div class="uni-name text-center col-lg-12">The American University</div>
 							</div>
-							<div class="deg-grad">
-								<span class="degree">B.S. Business Administration</span>
-								<span class="grad-date">Graduated May 2012</span>
-							</div>
-							<ul class="ed-list">
-								<li>The degree program covered a broad range of both general education and business courses. Course topics included economics, accounting, management, finance, marketing, technology, international business, math, and others</li>
-							</ul>
+							<div class="degree text-center">B.S. Business Administration</div>
+							<div class="grad-date text-center">Graduated May 2012</div>
+							<p class="ed-list">The degree program covered a broad range of both general education and business courses. Course topics included economics, accounting, management, finance, marketing, technology, international business, math, and others.</p>
 						</div>
 					</div>
 				</div>
 			</div>
 			<div id="projects-div">
-				<div id="projects-header" class="header col-lg-12">
-					<a name="projects-link"></a>
+				<div id="projects-header" class="header col-xs-12">
 					<h1 id="projects-header-text" class="header-text text-center">Projects</h1>
 				</div>
-				<div id="projects-panels" class="col-lg-12">
-					<div class="panel-row col-lg-12">
+				<div id="projects-panels" class="col-xs-12">
+					<div class="panel-row col-xs-12">
 						<div class="panel panel-default projects-content-panel col-lg-5 col-md-5">
 							<div class="panel-body">
 								<img src="./assets/images/quote-screenshot.png" alt="Quote Generator Screenshot" class="img-thumbnail">
@@ -201,7 +192,7 @@
 							<div class="text-center panel-footer projects-footer">Tic-Tac-Toe</div>
 						</div>
 					</div>
-					<div class="panel-row col-lg-12">
+					<div class="panel-row col-xs-12">
 						<div class="panel panel-default projects-content-panel col-lg-5 col-md-5">
 							<div class="panel-body">
 								<img src="./assets/images/quote-screenshot.png" alt="Quote Generator Screenshot" class="img-thumbnail">
@@ -216,33 +207,33 @@
 						</div>
 					</div>
 				</div>
-				<div id="projects-panels-small-screen" class="col-lg-12">
-					<div class="panel-row row col-lg-12">
-						<div class="panel panel-default projects-content-panel col-sm-10">
+				<div id="projects-panels-small-screen" class="col-xs-12">
+					<div class="panel-row row col-xs-12">
+						<div class="panel panel-default projects-content-panel col-xs-10">
 							<div class="panel-body">
 								<img src="./assets/images/quote-screenshot.png" alt="Quote Generator Screenshot" class="img-thumbnail">
 							</div>
 							<div class="text-center panel-footer projects-footer">Quote Generator</div>
 						</div>
 					</div>
-					<div class="panel-row row col-lg-12">
-						<div class="panel panel-default projects-content-panel col-sm-10">
+					<div class="panel-row row col-xs-12">
+						<div class="panel panel-default projects-content-panel col-xs-10">
 							<div class="panel-body">
 								<img src="./assets/images/tic-tac-toe-screenshot.png" alt="Tic-Tac-Toe Screenshot" class="img-thumbnail">
 							</div>
 							<div class="text-center panel-footer projects-footer">Tic-Tac-Toe</div>
 						</div>
 					</div>
-					<div class="panel-row row col-lg-12">
-						<div class="panel panel-default projects-content-panel col-sm-10">
+					<div class="panel-row row col-xs-12">
+						<div class="panel panel-default projects-content-panel col-xs-10">
 							<div class="panel-body">
 								<img src="./assets/images/quote-screenshot.png" alt="Quote Generator Screenshot" class="img-thumbnail">
 							</div>
 							<div class="text-center panel-footer projects-footer">Quote Generator</div>
 						</div>
 					</div>
-					<div class="panel-row row col-lg-12">
-						<div class="panel panel-default projects-content-panel col-sm-10">
+					<div class="panel-row row col-xs-12">
+						<div class="panel panel-default projects-content-panel col-xs-10">
 							<div class="panel-body">
 								<img src="./assets/images/tic-tac-toe-screenshot.png" alt="Tic-Tac-Toe Screenshot" class="img-thumbnail">
 							</div>
@@ -252,12 +243,11 @@
 				</div>
 			</div>
 			<div id="skills-div">
-				<div id="skills-header" class="header col-lg-12">
-					<a name="skills-link"></a>
+				<div id="skills-header" class="header col-xs-12">
 					<h1 id="skills-header-text" class="header-text text-center">Skills</h1>
 				</div>
 				<div id="skills-panels-div">
-					<div class="panel panel-default col-lg-8 col-lg-offset-2 skills-content-panel">
+					<div class="panel panel-default col-xs-10 col-xs-offset-1 col-md-8 col-md-offset-2 skills-content-panel">
 						<div class="panel-body">
 							<div>
 								<h3 class="text-center skill-subheader">HTML/CSS</h3>
@@ -273,7 +263,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="panel panel-default col-lg-8 col-lg-offset-2 skills-content-panel">
+					<div class="panel panel-default col-xs-10 col-xs-offset-1 col-md-8 col-md-offset-2 skills-content-panel">
 						<div class="panel-body">
 							<div>
 								<h3 class="text-center skill-subheader">Javascript</h3>
@@ -291,7 +281,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="panel panel-default col-lg-8 col-lg-offset-2 skills-content-panel">
+					<div class="panel panel-default col-xs-10 col-xs-offset-1 col-md-8 col-md-offset-2 skills-content-panel">
 						<div class="panel-body">
 							<div>
 								<h3 class="text-center skill-subheader">Other</h3>
@@ -311,12 +301,11 @@
 				</div>
 			</div>
 			<div id="experience-div">
-				<div id="experience-header" class="header col-lg-12">
-					<a name="experience-link"></a>
+				<div id="experience-header" class="header col-xs-12">
 					<h1 id="experience-header-text" class="header-text text-center">Work Experience</h1>
 				</div>
 				<div id="experience-panels-div">
-					<div class="panel panel-default col-lg-8 col-lg-offset-2 experience-content-panel">
+					<div class="panel panel-default col-xs-10 col-xs-offset-1 col-md-8 col-md-offset-2 experience-content-panel">
 						<div class="panel-body">
 							<div class="job-location">
 								<span class="exp-job">Bound'ry Events and Caterings</span>
@@ -333,7 +322,7 @@
 							</ul>
 						</div>
 					</div>
-					<div class="panel panel-default col-lg-8 col-lg-offset-2 experience-content-panel">
+					<div class="panel panel-default col-xs-10 col-xs-offset-1 col-md-8 col-md-offset-2 experience-content-panel">
 						<div class="panel-body">
 							<div class="job-location">
 								<span class="exp-job">Thomas Nicholas Band</span>
@@ -349,7 +338,7 @@
 							</ul>
 						</div>
 					</div>
-					<div class="panel panel-default col-lg-8 col-lg-offset-2 experience-content-panel">
+					<div class="panel panel-default col-xs-10 col-xs-offset-1 col-md-8 col-md-offset-2 experience-content-panel">
 						<div class="panel-body">
 							<div class="job-location">
 								<span class="exp-job">Power Chord Guitar Lessons</span>
@@ -369,11 +358,10 @@
 				</div>
 			</div>
 			<div id="connect-div">
-				<div id="connect-header" class="header col-lg-12">
-					<a name="connect-link"></a>
+				<div id="connect-header" class="header col-xs-12">
 					<h1 id="connect-header-text" class="header-text text-center">Connect</h1>
 				</div>
-				<div id="social-media" class="col-lg-12">
+				<div id="social-media" class="col-xs-12">
 					<div id="social-media-inner">
 						<a href="https://www.facebook.com/ej.morgan.9" target="blank">
 							<img src="./assets/images/facebook.png" alt="Facebook Icon" class="social-icons">
