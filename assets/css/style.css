@@ -155,7 +155,8 @@ html {
     body body #nav-container-small-screen nav,
     html body #nav-container-small-screen nav {
       display: flex;
-      justify-content: space-between; }
+      justify-content: space-between;
+      box-shadow: 0 0 26px -6px #222; }
       body body #nav-container-small-screen nav #small-nav-my-name,
       html body #nav-container-small-screen nav #small-nav-my-name {
         margin: 10px 0; }
@@ -455,3 +456,7 @@ html {
       display: none; }
     body #nav-spacer {
       display: none; } }
+
+@media screen and (max-width: 567px) {
+  #small-nav-my-name {
+    display: none; } }

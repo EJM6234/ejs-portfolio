@@ -170,6 +170,7 @@ html {
 			nav {
 				display: flex;
 				justify-content: space-between;
+				box-shadow: 0 0 26px -6px #222;
 
 				#small-nav-my-name {
 					@extend %nav-my-name;
@@ -389,20 +390,26 @@ html {
 					}
 
 					#skills-panels-div {
-						.skill-subheader {
-							font-family: 'Josefin Slab', serif;
-							font-size: 40px;
-							font-weight: 500;
-							color: $black;
-							margin: 0;
-						}
+						.skills-content-panel {
+							min-width: 500px;
 
-						.skill-panel {
-							display: flex;
-							justify-content: space-around;
+							.skill-subheader {
+								font-family: 'Josefin Slab', serif;
+								font-size: 40px;
+								font-weight: 500;
+								color: $black;
+								margin: 0;
+							}
 
-							i {
-								font-size: 80px;
+							.skill-panel {
+								display: flex;
+								justify-content: space-around;
+								flex-wrap: wrap;
+
+								i {
+									font-size: 80px;
+									margin-bottom: 10px;
+								}
 							}
 						}
 					}
@@ -592,5 +599,10 @@ html {
 		#nav-spacer {
 			display: none;
 		}
+	}
+}
+@media screen and (max-width: 567px) {
+	#small-nav-my-name {
+		display: none;
 	}
 }
