@@ -22,6 +22,13 @@ html body #nav-container-small-screen nav #small-nav-my-name {
   color: #5C4B51;
   line-height: normal; }
 
+body body #nav-container-small-screen nav #small-nav-glyphs .glyphicon-small-nav,
+html body #nav-container-small-screen nav #small-nav-glyphs .glyphicon-small-nav, body body #nav-container-small-screen nav #small-nav-glyphs .glyphicon-small-nav-resume,
+html body #nav-container-small-screen nav #small-nav-glyphs .glyphicon-small-nav-resume {
+  font-size: 36px;
+  margin: 11px 5px 0;
+  cursor: pointer; }
+
 body,
 html {
   height: 100%; }
@@ -160,34 +167,27 @@ html {
       body body #nav-container-small-screen nav #small-nav-my-name,
       html body #nav-container-small-screen nav #small-nav-my-name {
         margin: 10px 0; }
-      body body #nav-container-small-screen nav #small-nav-glyphs .small-nav-choice,
-      html body #nav-container-small-screen nav #small-nav-glyphs .small-nav-choice {
-        cursor: pointer; }
-      body body #nav-container-small-screen nav #small-nav-glyphs #about-glyph,
-      html body #nav-container-small-screen nav #small-nav-glyphs #about-glyph {
+      body body #nav-container-small-screen nav #small-nav-glyphs #about-glyph-small,
+      html body #nav-container-small-screen nav #small-nav-glyphs #about-glyph-small {
         color: #2E5458; }
-      body body #nav-container-small-screen nav #small-nav-glyphs #education-glyph,
-      html body #nav-container-small-screen nav #small-nav-glyphs #education-glyph {
+      body body #nav-container-small-screen nav #small-nav-glyphs #education-glyph-small,
+      html body #nav-container-small-screen nav #small-nav-glyphs #education-glyph-small {
         color: #F3B562; }
-      body body #nav-container-small-screen nav #small-nav-glyphs #projects-glyph,
-      html body #nav-container-small-screen nav #small-nav-glyphs #projects-glyph {
+      body body #nav-container-small-screen nav #small-nav-glyphs #projects-glyph-small,
+      html body #nav-container-small-screen nav #small-nav-glyphs #projects-glyph-small {
         color: #8CBEB2; }
-      body body #nav-container-small-screen nav #small-nav-glyphs #skills-glyph,
-      html body #nav-container-small-screen nav #small-nav-glyphs #skills-glyph {
+      body body #nav-container-small-screen nav #small-nav-glyphs #skills-glyph-small,
+      html body #nav-container-small-screen nav #small-nav-glyphs #skills-glyph-small {
         color: #F2EBBF; }
-      body body #nav-container-small-screen nav #small-nav-glyphs #experience-glyph,
-      html body #nav-container-small-screen nav #small-nav-glyphs #experience-glyph {
+      body body #nav-container-small-screen nav #small-nav-glyphs #experience-glyph-small,
+      html body #nav-container-small-screen nav #small-nav-glyphs #experience-glyph-small {
         color: #F06060; }
-      body body #nav-container-small-screen nav #small-nav-glyphs #connect-glyph,
-      html body #nav-container-small-screen nav #small-nav-glyphs #connect-glyph {
+      body body #nav-container-small-screen nav #small-nav-glyphs #connect-glyph-small,
+      html body #nav-container-small-screen nav #small-nav-glyphs #connect-glyph-small {
         color: #73573F; }
-      body body #nav-container-small-screen nav #small-nav-glyphs #resume-glyph,
-      html body #nav-container-small-screen nav #small-nav-glyphs #resume-glyph {
+      body body #nav-container-small-screen nav #small-nav-glyphs #resume-glyph-small,
+      html body #nav-container-small-screen nav #small-nav-glyphs #resume-glyph-small {
         color: #5C4B51; }
-      body body #nav-container-small-screen nav #small-nav-glyphs .glyphicon-small-nav,
-      html body #nav-container-small-screen nav #small-nav-glyphs .glyphicon-small-nav {
-        font-size: 36px;
-        margin: 11px 5px 0; }
     body body #open-close:hover,
     html body #open-close:hover {
       cursor: pointer;
@@ -215,11 +215,11 @@ html {
       body body #main-container #nav-spacer,
       html body #main-container #nav-spacer {
         margin-left: 240px; }
-      body body #main-container #main #landing-div,
-      html body #main-container #main #landing-div {
+      body body #main-container #main #profile-pic-div,
+      html body #main-container #main #profile-pic-div {
         display: flex; }
-        body body #main-container #main #landing-div #profile-pic,
-        html body #main-container #main #landing-div #profile-pic {
+        body body #main-container #main #profile-pic-div #profile-pic,
+        html body #main-container #main #profile-pic-div #profile-pic {
           margin: 30px auto 10px;
           -moz-width: 45%; }
       body body #main-container #main #email,
@@ -295,6 +295,9 @@ html {
         font-weight: 400;
         margin-top: 10px;
         text-align: center; }
+      body body #main-container #main #projects-div #projects-panels .bottom-projects-row,
+      html body #main-container #main #projects-div #projects-panels .bottom-projects-row {
+        margin-bottom: 20px; }
       body body #main-container #main #projects-div #projects-panels .panel-row,
       html body #main-container #main #projects-div #projects-panels .panel-row {
         display: flex;
@@ -309,9 +312,9 @@ html {
             font-size: 24px;
             font-weight: 700;
             color: #8CBEB2; }
-      body body #main-container #main #skills-div #skills-header,
-      html body #main-container #main #skills-div #skills-header {
-        margin: 20px 0; }
+      body body #main-container #main #skills-div #skills-panels-div #html-css-skills,
+      html body #main-container #main #skills-div #skills-panels-div #html-css-skills {
+        margin-top: 20px; }
       body body #main-container #main #skills-div #skills-panels-div .skills-content-panel,
       html body #main-container #main #skills-div #skills-panels-div .skills-content-panel {
         min-width: 500px; }
@@ -442,6 +445,8 @@ html {
 @media screen and (max-width: 991px) {
   #projects-panels {
     display: none; }
+  #projects-panels-small-screen .bottom-projects-row {
+    margin-bottom: 20px; }
   #projects-panels-small-screen .panel-row {
     display: flex;
     justify-content: space-around; }
@@ -463,5 +468,7 @@ html {
       display: none; } }
 
 @media screen and (max-width: 567px) {
-  #small-nav-my-name {
-    display: none; } }
+  .navbar {
+    height: 67px; }
+    .navbar #small-nav-my-name {
+      display: none; } }

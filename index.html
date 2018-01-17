@@ -2,11 +2,13 @@
 <html>
 <!-- TODO: Update project tabs with most recent/relevant projects -->
 <!-- TODO: Project tabs need to flip and display info on project -->
+<!-- TODO: Add favicon -->
 
 <head>
 	<title>EJ Morgan | Software Developer Portfolio</title>
 	<meta name="viewport" content="width=device-width initial-scale=1">
 	<meta charset="utf-8">
+	<link rel='shortcut icon' type='image/x-icon' href='./favicon.ico'>
 	<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
 	<link href="https://fonts.googleapis.com/css?family=Josefin+Slab:100,100i,300,300i,400,400i,600,600i,700,700i" rel="stylesheet">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -14,6 +16,7 @@
 </head>
 
 <body>
+	<!-- Navigation -->
 	<div id="nav-container" class="col-lg-2">
 		<ul>
 			<li id="name-title">
@@ -89,48 +92,37 @@
 				<span>EJ Morgan</span>
 			</div>
 			<div id="small-nav-glyphs">
-				<a href="#about-header" class="small-nav-choice">
-					<span id="about-glyph" class="glyphicon-small-nav glyphicon glyphicon-user nav-list-spans"></span>
-				</a>
-				<a href="#education-header" class="small-nav-choice">
-					<span id="education-glyph" class="glyphicon-small-nav glyphicon glyphicon-apple nav-list-spans"></span>
-				</a>
-				<a href="#projects-header" class="small-nav-choice">
-					<span id="projects-glyph" class="glyphicon-small-nav glyphicon glyphicon-briefcase nav-list-spans"></span>
-				</a>
-				<a href="#skills-header" class="small-nav-choice">
-					<span id="skills-glyph" class="glyphicon-small-nav glyphicon glyphicon-stats nav-list-spans"></span>
-				</a>
-				<a href="#experience-header" class="small-nav-choice">
-					<span id="experience-glyph" class="glyphicon-small-nav glyphicon glyphicon-road nav-list-spans"></span>
-				</a>
-				<a href="#connect-header" class="small-nav-choice">
-					<span id="connect-glyph" class="glyphicon-small-nav glyphicon glyphicon-envelope nav-list-spans"></span>
-				</a>
+				<span id="about-glyph-small" class="glyphicon-small-nav glyphicon glyphicon-user nav-list-spans"></span>
+				<span id="education-glyph-small" class="glyphicon-small-nav glyphicon glyphicon-apple nav-list-spans"></span>
+				<span id="projects-glyph-small" class="glyphicon-small-nav glyphicon glyphicon-briefcase nav-list-spans"></span>
+				<span id="skills-glyph-small" class="glyphicon-small-nav glyphicon glyphicon-stats nav-list-spans"></span>
+				<span id="experience-glyph-small" class="glyphicon-small-nav glyphicon glyphicon-road nav-list-spans"></span>
+				<span id="connect-glyph-small" class="glyphicon-small-nav glyphicon glyphicon-envelope nav-list-spans"></span>
 				<a href="https://www.dropbox.com/s/otnviz7srrm6mrw/Edward%20Morgan%20Software%20Developer%20Resume%2010192017.pdf?dl=0" class="small-nav-choice" target="blank">
-					<span id="resume-glyph" class="glyphicon-small-nav glyphicon glyphicon-list-alt nav-list-spans"></span>
+					<span id="resume-glyph-small" class="glyphicon-small-nav-resume glyphicon glyphicon-list-alt nav-list-spans"></span>
 				</a>
 			</div>
 		</nav>
 	</div>
-	<!-- <div id="open-close">
-		<span id="close-glyph" class="glyphicon glyphicon-chevron-left"></span>
-	</div> -->
 	<div id="main-container">
 		<div id="nav-spacer"></div>
 		<div id="main">
+			<!-- Landing -->
 			<div id="landing-div">
-				<img id="profile-pic" src="./assets/images/profile.jpg" alt="Profile Picture" class="img-circle img-responsive text-center">
+				<div id="profile-pic-div">
+					<img id="profile-pic" src="./assets/images/profile.jpg" alt="Profile Picture" class="img-circle img-responsive text-center">
+				</div>
+				<div id="location-email-div" class="text-center col-xs-12">
+					<div id="email">Durham, NC / EJM62345@gmail.com</div>
+				</div>
+				<div class="div-line-div col-xs-12">
+					<div class="div-line"></div>
+				</div>
+				<div id="tagline-div">
+					<h2 id="tagline" class="text-center">Driven software developer with a passion for clean, efficient code</h2>
+				</div>
 			</div>
-			<div id="location-email-div" class="text-center col-xs-12">
-				<div id="email">Durham, NC / EJM62345@gmail.com</div>
-			</div>
-			<div class="div-line-div col-xs-12">
-				<div class="div-line"></div>
-			</div>
-			<div id="tagline-div">
-				<h2 id="tagline" class="text-center">Driven software developer with a passion for clean, efficient code</h2>
-			</div>
+			<!-- Content -->
 			<div id="about-div">
 				<div id="about-header" class="header col-xs-12">
 					<h1 id="about-header-text" class="header-text text-center">About Me</h1>
@@ -182,27 +174,30 @@
 							<div class="panel-body">
 								<img src="./assets/images/quote-screenshot.png" alt="Quote Generator Screenshot" class="img-thumbnail">
 							</div>
-							<div class="text-center panel-footer projects-footer">Quote Generator</div>
+							<div class="text-center panel-footer projects-footer">Candidate Screener</div>
 						</div>
 						<div class="panel panel-default projects-content-panel col-lg-5 col-md-5">
 							<div class="panel-body">
 								<img src="./assets/images/tic-tac-toe-screenshot.png" alt="Tic-Tac-Toe Screenshot" class="img-thumbnail">
 							</div>
-							<div class="text-center panel-footer projects-footer">Tic-Tac-Toe</div>
+							<div class="text-center panel-footer projects-footer">
+								<span>Quote Generator</span>
+								<!-- <span class="glyph-option glyphicon glyphicon-option-horizontal" aria-hidden="true"></span> -->
+							</div>
 						</div>
 					</div>
-					<div class="panel-row col-xs-12">
+					<div class="panel-row col-xs-12 bottom-projects-row">
 						<div class="panel panel-default projects-content-panel col-lg-5 col-md-5">
 							<div class="panel-body">
 								<img src="./assets/images/quote-screenshot.png" alt="Quote Generator Screenshot" class="img-thumbnail">
 							</div>
-							<div class="text-center panel-footer projects-footer">Quote Generator</div>
+							<div class="text-center panel-footer projects-footer">Sweet Talk</div>
 						</div>
 						<div class="panel panel-default projects-content-panel col-lg-5 col-md-5">
 							<div class="panel-body">
 								<img src="./assets/images/tic-tac-toe-screenshot.png" alt="Tic-Tac-Toe Screenshot" class="img-thumbnail">
 							</div>
-							<div class="text-center panel-footer projects-footer">Tic-Tac-Toe</div>
+							<div class="text-center panel-footer projects-footer">Project #4</div>
 						</div>
 					</div>
 				</div>
@@ -231,7 +226,7 @@
 							<div class="text-center panel-footer projects-footer">Quote Generator</div>
 						</div>
 					</div>
-					<div class="panel-row col-xs-12">
+					<div class="bottom-projects-row panel-row col-xs-12">
 						<div class="panel panel-default projects-content-panel col-xs-10">
 							<div class="panel-body">
 								<img src="./assets/images/tic-tac-toe-screenshot.png" alt="Tic-Tac-Toe Screenshot" class="img-thumbnail">
@@ -246,7 +241,7 @@
 					<h1 id="skills-header-text" class="header-text text-center">Skills</h1>
 				</div>
 				<div id="skills-panels-div">
-					<div class="panel panel-default col-xs-10 col-xs-offset-1 col-md-8 col-md-offset-2 skills-content-panel">
+					<div id="html-css-skills" class="panel panel-default col-xs-10 col-xs-offset-1 col-md-8 col-md-offset-2 skills-content-panel">
 						<div class="panel-body">
 							<div>
 								<h3 class="text-center skill-subheader">HTML/CSS</h3>

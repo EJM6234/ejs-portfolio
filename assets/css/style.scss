@@ -178,41 +178,40 @@ html {
 				}
 
 				#small-nav-glyphs {
-					.small-nav-choice {
-						cursor: pointer;
-					}
-
-					#about-glyph {
+					#about-glyph-small {
 						color: $dark-teal;
 					}
 
-					#education-glyph {
+					#education-glyph-small {
 						color: $orange;
 					}
 
-					#projects-glyph {
+					#projects-glyph-small {
 						color: $teal;
 					}
 
-					#skills-glyph {
+					#skills-glyph-small {
 						color: $off-white;
 					}
 
-					#experience-glyph {
+					#experience-glyph-small {
 						color: $salmon;
 					}
 
-					#connect-glyph {
+					#connect-glyph-small {
 						color: $brown;
 					}
 
-					#resume-glyph {
+					#resume-glyph-small {
 						color: $black;
 					}
 
 					.glyphicon-small-nav {
-						font-size: 36px;
-						margin: 11px 5px 0;
+						@extend %glyphicon-small-nav;
+					}
+
+					.glyphicon-small-nav-resume {
+						@extend %glyphicon-small-nav;
 					}
 				}
 			}
@@ -250,7 +249,7 @@ html {
 			}
 
 			#main {
-				#landing-div {
+				#profile-pic-div {
 					display: flex;
 
 					#profile-pic {
@@ -363,6 +362,10 @@ html {
 					}
 
 					#projects-panels {
+						.bottom-projects-row {
+							margin-bottom: 20px;
+						}
+
 						.panel-row {
 							display: flex;
 							justify-content: space-around;
@@ -384,12 +387,14 @@ html {
 
 				#skills-div {
 					#skills-header {
-						margin: 20px 0;
-
 						#skills-header-text {}
 					}
 
 					#skills-panels-div {
+						#html-css-skills {
+							margin-top: 20px;
+						}
+
 						.skills-content-panel {
 							min-width: 500px;
 
@@ -570,6 +575,10 @@ html {
 	}
 
 	#projects-panels-small-screen {
+		.bottom-projects-row {
+			margin-bottom: 20px;
+		}
+
 		.panel-row {
 			display: flex;
 			justify-content: space-around;
@@ -602,7 +611,11 @@ html {
 	}
 }
 @media screen and (max-width: 567px) {
-	#small-nav-my-name {
-		display: none;
+	.navbar {
+		height: 67px;
+
+		#small-nav-my-name {
+			display: none;
+		}
 	}
 }
