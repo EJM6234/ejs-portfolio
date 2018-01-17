@@ -117,7 +117,7 @@ html {
           html body #nav-container ul #nav-choices .nav-choice {
             list-style-type: none;
             font-family: 'Josefin Slab', serif;
-            font-size: 25px;
+            font-size: 24px;
             font-weight: 200;
             color: #5C4B51;
             height: 60px; }
@@ -312,20 +312,25 @@ html {
       body body #main-container #main #skills-div #skills-header,
       html body #main-container #main #skills-div #skills-header {
         margin: 20px 0; }
-      body body #main-container #main #skills-div #skills-panels-div .skill-subheader,
-      html body #main-container #main #skills-div #skills-panels-div .skill-subheader {
-        font-family: 'Josefin Slab', serif;
-        font-size: 40px;
-        font-weight: 500;
-        color: #5C4B51;
-        margin: 0; }
-      body body #main-container #main #skills-div #skills-panels-div .skill-panel,
-      html body #main-container #main #skills-div #skills-panels-div .skill-panel {
-        display: flex;
-        justify-content: space-around; }
-        body body #main-container #main #skills-div #skills-panels-div .skill-panel i,
-        html body #main-container #main #skills-div #skills-panels-div .skill-panel i {
-          font-size: 80px; }
+      body body #main-container #main #skills-div #skills-panels-div .skills-content-panel,
+      html body #main-container #main #skills-div #skills-panels-div .skills-content-panel {
+        min-width: 500px; }
+        body body #main-container #main #skills-div #skills-panels-div .skills-content-panel .skill-subheader,
+        html body #main-container #main #skills-div #skills-panels-div .skills-content-panel .skill-subheader {
+          font-family: 'Josefin Slab', serif;
+          font-size: 40px;
+          font-weight: 500;
+          color: #5C4B51;
+          margin: 0; }
+        body body #main-container #main #skills-div #skills-panels-div .skills-content-panel .skill-panel,
+        html body #main-container #main #skills-div #skills-panels-div .skills-content-panel .skill-panel {
+          display: flex;
+          justify-content: space-around;
+          flex-wrap: wrap; }
+          body body #main-container #main #skills-div #skills-panels-div .skills-content-panel .skill-panel i,
+          html body #main-container #main #skills-div #skills-panels-div .skills-content-panel .skill-panel i {
+            font-size: 80px;
+            margin-bottom: 10px; }
       body body #main-container #main #experience-div #experience-header,
       html body #main-container #main #experience-div #experience-header {
         margin-bottom: 20px; }
