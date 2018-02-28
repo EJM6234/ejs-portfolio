@@ -370,6 +370,13 @@ html {
 							display: flex;
 							justify-content: space-around;
 
+							.projects-content-panel:hover {
+								-webkit-box-shadow: 0 0 26px -6px #222;
+								-moz-box-shadow: 0 0 26px -6px #222;
+								box-shadow: 0 0 26px -6px #222;
+								cursor: pointer;
+							}
+
 							.projects-content-panel {
 								margin: 20px 0 0;
 								padding: 0;
