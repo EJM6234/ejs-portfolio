@@ -361,6 +361,13 @@ html {
 						#projects-header-text {}
 					}
 
+					.projects-content-panel:hover {
+						-webkit-box-shadow: 0 0 26px -6px #222;
+						-moz-box-shadow: 0 0 26px -6px #222;
+						box-shadow: 0 0 26px -6px #222;
+						cursor: pointer;
+					}
+
 					#projects-panels {
 						.bottom-projects-row {
 							margin-bottom: 20px;
@@ -369,13 +376,6 @@ html {
 						.panel-row {
 							display: flex;
 							justify-content: space-around;
-
-							.projects-content-panel:hover {
-								-webkit-box-shadow: 0 0 26px -6px #222;
-								-moz-box-shadow: 0 0 26px -6px #222;
-								box-shadow: 0 0 26px -6px #222;
-								cursor: pointer;
-							}
 
 							.projects-content-panel {
 								margin: 20px 0 0;

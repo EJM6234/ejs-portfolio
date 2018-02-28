@@ -295,6 +295,12 @@ html {
         font-weight: 400;
         margin-top: 10px;
         text-align: center; }
+      body body #main-container #main #projects-div .projects-content-panel:hover,
+      html body #main-container #main #projects-div .projects-content-panel:hover {
+        -webkit-box-shadow: 0 0 26px -6px #222;
+        -moz-box-shadow: 0 0 26px -6px #222;
+        box-shadow: 0 0 26px -6px #222;
+        cursor: pointer; }
       body body #main-container #main #projects-div #projects-panels .bottom-projects-row,
       html body #main-container #main #projects-div #projects-panels .bottom-projects-row {
         margin-bottom: 20px; }
@@ -302,12 +308,6 @@ html {
       html body #main-container #main #projects-div #projects-panels .panel-row {
         display: flex;
         justify-content: space-around; }
-        body body #main-container #main #projects-div #projects-panels .panel-row .projects-content-panel:hover,
-        html body #main-container #main #projects-div #projects-panels .panel-row .projects-content-panel:hover {
-          -webkit-box-shadow: 0 0 26px -6px #222;
-          -moz-box-shadow: 0 0 26px -6px #222;
-          box-shadow: 0 0 26px -6px #222;
-          cursor: pointer; }
         body body #main-container #main #projects-div #projects-panels .panel-row .projects-content-panel,
         html body #main-container #main #projects-div #projects-panels .panel-row .projects-content-panel {
           margin: 20px 0 0;
