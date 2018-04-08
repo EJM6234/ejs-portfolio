@@ -1,5 +1,7 @@
-@import "variables.scss";
 @import "extend.scss";
+@import "variables.scss";
+@import "bootstrap";
+@import "bootstrap/theme";
 
 body,
 html {
@@ -379,6 +381,14 @@ html {
 							.projects-content-panel {
 								margin: 20px 0 0;
 								padding: 0;
+
+								.panel-body-front {
+									.panel-body-front img {
+										border-radius: none !important;
+									}
+								}
+
+								.panel-body-back {}
 
 								.projects-footer {
 									font-family: 'Josefin Slab', serif;
