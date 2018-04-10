@@ -6518,8 +6518,8 @@ html {
         margin-top: 20px;
         margin-bottom: 20px;
         text-align: justify; }
-        body body #main-container #main #about-div .about-panel #about-text,
-        html body #main-container #main #about-div .about-panel #about-text {
+        body body #main-container #main #about-div .about-panel .about-text,
+        html body #main-container #main #about-div .about-panel .about-text {
           font-family: 'Josefin Slab', serif;
           font-size: 20px;
           font-weight: 400;
