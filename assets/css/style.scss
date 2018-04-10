@@ -368,9 +368,8 @@ html {
 						box-shadow: 0 0 26px -6px #222;
 					}
 
-					#projects-panels {
-						hoverflow: hidden;
-
+					#projects-panels,
+					#projects-panels-small-screen {
 						.bottom-projects-row {
 							margin-bottom: 20px;
 						}
@@ -394,6 +393,12 @@ html {
 										.project-description {
 											font-family: 'Josefin Slab', serif;
 											font-size: 1.5vw;
+											font-weight: 700;
+											color: $black;
+										}
+
+										.project-description-small-screen {
+											font-family: 'Josefin Slab', serif;
 											font-weight: 700;
 											color: $black;
 										}
