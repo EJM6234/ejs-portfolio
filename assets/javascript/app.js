@@ -12,6 +12,20 @@ $(document).ready(function() {
     }
   });
 
+  $(".hover").hover(function() {
+    var height = $(this).children(".panel-body-front").css("height");
+    $(this).children(".panel-body-front").css("display", "none");
+    $(this).children(".panel-body-back").css({
+      "height": height,
+      "width": "auto",
+      "display": "block"
+    });
+    console.log(this);
+  }, function() {
+    $(this).children(".panel-body-front").css("display", "block");
+    $(this).children(".panel-body-back").css("display", "none");
+  });
+
   $(".glyphicon-small-nav").on("click", function(e) {
     const headerId = `#${$(this).attr('id').match(/\w+/g)[0]}-header`;
     const headerPos = $(headerId).position();

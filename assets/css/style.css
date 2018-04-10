@@ -6566,28 +6566,54 @@ html {
       html body #main-container #main #projects-div .projects-content-panel:hover {
         -webkit-box-shadow: 0 0 26px -6px #222;
         -moz-box-shadow: 0 0 26px -6px #222;
-        box-shadow: 0 0 26px -6px #222;
-        cursor: pointer; }
-      body body #main-container #main #projects-div #projects-panels .bottom-projects-row,
-      html body #main-container #main #projects-div #projects-panels .bottom-projects-row {
-        margin-bottom: 20px; }
-      body body #main-container #main #projects-div #projects-panels .panel-row,
-      html body #main-container #main #projects-div #projects-panels .panel-row {
-        display: flex;
-        justify-content: space-around; }
-        body body #main-container #main #projects-div #projects-panels .panel-row .projects-content-panel,
-        html body #main-container #main #projects-div #projects-panels .panel-row .projects-content-panel {
-          margin: 20px 0 0;
-          padding: 0; }
-          body body #main-container #main #projects-div #projects-panels .panel-row .projects-content-panel .panel-body-front .panel-body-front img,
-          html body #main-container #main #projects-div #projects-panels .panel-row .projects-content-panel .panel-body-front .panel-body-front img {
-            border-radius: none !important; }
-          body body #main-container #main #projects-div #projects-panels .panel-row .projects-content-panel .projects-footer,
-          html body #main-container #main #projects-div #projects-panels .panel-row .projects-content-panel .projects-footer {
-            font-family: 'Josefin Slab', serif;
-            font-size: 24px;
-            font-weight: 700;
-            color: #8CBEB2; }
+        box-shadow: 0 0 26px -6px #222; }
+      body body #main-container #main #projects-div #projects-panels,
+      html body #main-container #main #projects-div #projects-panels {
+        hoverflow: hidden; }
+        body body #main-container #main #projects-div #projects-panels .bottom-projects-row,
+        html body #main-container #main #projects-div #projects-panels .bottom-projects-row {
+          margin-bottom: 20px; }
+        body body #main-container #main #projects-div #projects-panels .panel-row,
+        html body #main-container #main #projects-div #projects-panels .panel-row {
+          display: flex;
+          justify-content: space-around; }
+          body body #main-container #main #projects-div #projects-panels .panel-row .projects-content-panel,
+          html body #main-container #main #projects-div #projects-panels .panel-row .projects-content-panel {
+            margin: 20px 0 0;
+            padding: 0; }
+            body body #main-container #main #projects-div #projects-panels .panel-row .projects-content-panel .panel-body-back,
+            html body #main-container #main #projects-div #projects-panels .panel-row .projects-content-panel .panel-body-back {
+              display: none; }
+              body body #main-container #main #projects-div #projects-panels .panel-row .projects-content-panel .panel-body-back .panel-back-inner,
+              html body #main-container #main #projects-div #projects-panels .panel-row .projects-content-panel .panel-body-back .panel-back-inner {
+                padding: 20px; }
+                body body #main-container #main #projects-div #projects-panels .panel-row .projects-content-panel .panel-body-back .panel-back-inner .project-description,
+                html body #main-container #main #projects-div #projects-panels .panel-row .projects-content-panel .panel-body-back .panel-back-inner .project-description {
+                  font-family: 'Josefin Slab', serif;
+                  font-size: 1.5vw;
+                  font-weight: 700;
+                  color: #5C4B51; }
+                body body #main-container #main #projects-div #projects-panels .panel-row .projects-content-panel .panel-body-back .panel-back-inner .panel-back-inner a img,
+                html body #main-container #main #projects-div #projects-panels .panel-row .projects-content-panel .panel-body-back .panel-back-inner .panel-back-inner a img {
+                  margin: 0 14px;
+                  height: 70px; }
+                body body #main-container #main #projects-div #projects-panels .panel-row .projects-content-panel .panel-body-back .panel-back-inner .app-link-icons,
+                html body #main-container #main #projects-div #projects-panels .panel-row .projects-content-panel .panel-body-back .panel-back-inner .app-link-icons {
+                  display: flex;
+                  justify-content: center; }
+                  body body #main-container #main #projects-div #projects-panels .panel-row .projects-content-panel .panel-body-back .panel-back-inner .app-link-icons .project-icons,
+                  html body #main-container #main #projects-div #projects-panels .panel-row .projects-content-panel .panel-body-back .panel-back-inner .app-link-icons .project-icons {
+                    padding-top: 20px;
+                    margin: auto 25px; }
+                  body body #main-container #main #projects-div #projects-panels .panel-row .projects-content-panel .panel-body-back .panel-back-inner .app-link-icons .project-icons:hover,
+                  html body #main-container #main #projects-div #projects-panels .panel-row .projects-content-panel .panel-body-back .panel-back-inner .app-link-icons .project-icons:hover {
+                    cursor: pointer; }
+            body body #main-container #main #projects-div #projects-panels .panel-row .projects-content-panel .projects-footer,
+            html body #main-container #main #projects-div #projects-panels .panel-row .projects-content-panel .projects-footer {
+              font-family: 'Josefin Slab', serif;
+              font-size: 24px;
+              font-weight: 700;
+              color: #8CBEB2; }
       body body #main-container #main #skills-div #skills-panels-div #html-css-skills,
       html body #main-container #main #skills-div #skills-panels-div #html-css-skills {
         margin-top: 20px; }

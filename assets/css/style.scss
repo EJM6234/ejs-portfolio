@@ -366,10 +366,11 @@ html {
 						-webkit-box-shadow: 0 0 26px -6px #222;
 						-moz-box-shadow: 0 0 26px -6px #222;
 						box-shadow: 0 0 26px -6px #222;
-						cursor: pointer;
 					}
 
 					#projects-panels {
+						hoverflow: hidden;
+
 						.bottom-projects-row {
 							margin-bottom: 20px;
 						}
@@ -382,13 +383,41 @@ html {
 								margin: 20px 0 0;
 								padding: 0;
 
-								.panel-body-front {
-									.panel-body-front img {
-										border-radius: none !important;
+								.panel-body-front {}
+
+								.panel-body-back {
+									display: none;
+
+									.panel-back-inner {
+										padding: 20px;
+
+										.project-description {
+											font-family: 'Josefin Slab', serif;
+											font-size: 1.5vw;
+											font-weight: 700;
+											color: $black;
+										}
+
+										.panel-back-inner a img {
+											margin: 0 14px;
+											height: 70px;
+										}
+
+										.app-link-icons {
+											display: flex;
+											justify-content: center;
+
+											.project-icons {
+												padding-top: 20px;
+												margin: auto 25px;
+											}
+
+											.project-icons:hover {
+												cursor: pointer;
+											}
+										}
 									}
 								}
-
-								.panel-body-back {}
 
 								.projects-footer {
 									font-family: 'Josefin Slab', serif;
